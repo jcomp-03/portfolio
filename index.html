@@ -32,84 +32,111 @@ THEN I am presented with a responsive layout that adapts to my viewport
     <body>
         <header>
             <h1 class="header-my-name">
-                <a href="/">jcomp-03</a>
+                <a href="/">hello visitor, welcome to my website!</a>
             </h1>
             <!-- <nav> to provide navigational links within current document or to other documents -->
             <nav>
                 <ul type="square">
-                    <li><a href="#about-me">about me</a></li>
-                    <li><a href="#about-site">about this site</a></li>
-                    <li><a href="#my-work">my work</a></li>
-                    <li><a href="#contact-me">contact me</a></li>
+                    <li><a href="#id-about-me">about me</a></li>
+                    <li><a href="#id-my-work">my work</a></li>
+                    <li><a href="#id-contact-me">contact me</a></li>
+                    <li><a href="#id-my-resume">my resume</a></li>
                 </ul>
             </nav>
         </header>
         
+        <!-- SECTION BANNER -->
+        <section class="display-flex-row-wrap banner">
+        </section>
+
         <!-- SECTION ABOUT ME -->
         <section class="display-flex-row-wrap" id="id-about-me">
-            <div class="wrapper-section-title">
+            <div class="wrap-section-title">
                 <h2 class="section-title">About Me!</h2>
             </div>
 
-            <div class="wrapper-section-content">
+            <div class="wrap-section-content">
                 <p>
-                    Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
-                    Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
-                    Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
-                    At sed debet facete, est at nibh oratio veritus. Suas erroribus ne cum, eos et case partem ancillae.
+                    Again, welcome to my website! I started coding only in December 2021, when I enrolled in a coding bootcamp. So, this page
+                    from which you are reading this text is a proverbial <em>work-in-progress</em>. I decided to enroll in this boot camp for a lot of
+                    reasons, but in a nutshell, I wanted to try something new for my profession.
                     <br><br>
-                    Odio populo petentium id eam. Vix eu laoreet principes.
-                    Viris recteque postulant no eos, homero phaedrum eum id, nec no wisi invenire. 
-                    Mei id atqui honestatis, et nec dolor feugiat definitionem, sea et sale habemus incorrupte. 
-                    Vix vero accommodare id, sea alterum elaboraret eloquentiam ad, te mea tamquam voluptua voluptaria.
-                    
+                    For a little background on who I am, I was born in Ireland, raised in Miami, Florida, and have lived in a number of different
+                    cities since moving away from home after high school. Those cities are New York, Atlanta, Albuquerque, Portland, and Lima (Peru, that is!).
+                    I have had great experiences living in those cities, each of which taught me valuable nuggets of wisdom and helped me form my world perspective.
+                    If I had to choose which city I look back on most fondly, I think I would select Portland; the Pacific Northwest is absolutely stunning
+                    and offers a balanced city-and-outdoors lifestyle.
+                    <br><br>
+                    seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
+                    messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
+                    Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
+                    tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
+                    probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
+                    <br><br>
+                    seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
+                    messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
+                    Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
+                    tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
+                    probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
                 </p>
             </div>
         </section>
 
         <!-- SECTION MY WORK -->
         <section class="display-flex-row-wrap" id="id-my-work">
-            <div class="wrapper-section-title">
+            <div class="wrap-section-title">
                 <h2 class="section-title">My Work</h2>
             </div>
 
-            <div class="wrapper-section-content">
-                <div class="wrapper-flagship-application">
-                    <p>Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
-                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
-                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
-                    </p>
+            <div class="wrap-section-content">
+                <div class="wrap-app-flagship">
+                    <div class="app-title-styling" id="id-app-flagship-title">
+                        <h3>My App #1</h3>
+                        <p>MERN Stack</p>
+                    </div>
                 </div>
 
-                <div class="wrapper-miscellaneous-application display-flex-row-wrap">
+                <div class="wrap-app-miscellaneous display-flex-row-wrap" id="id-my-miscellaneous-apps">
                     <!-- Create 4 container divs for correponding images/applications -->
-                    <div class="miscellaneous-application" id="miscellaneous-application-1">
-                        Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
-                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
-                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut. 
+                    <div class="app-miscellaneous" id="id-app-2">
+                        <div class="app-miscellaneous-title app-title-styling">
+                            <h3>My App #2</h3>
+                            <p>Node/IoT more text to test</p>
+                        </div>
                     </div>
-                    <div class="miscellaneous-application" id="miscellaneous-application-2">
-                        Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
-                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
-                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
+                    <div class="app-miscellaneous" id="id-app-3">
+                        <div class="app-miscellaneous-title app-title-styling">
+                            <h3>My App #3</h3>
+                            <p>React/JavaScript/CSS</p>
+                        </div>
                     </div>
-                    <div class="miscellaneous-application" id="miscellaneous-application-3">
-                        Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
-                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
-                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
+                    <div class="app-miscellaneous" id="id-app-4">
+                        <div class="app-miscellaneous-title app-title-styling">
+                            <h3>My App #4</h3>
+                            <p>MERN Stack</p>
+                        </div>
                     </div>
-                    <div class="miscellaneous-application" id="miscellaneous-application-4">
-                        Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
-                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
-                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
+                    <div class="app-miscellaneous" id="id-app-5">
+                        <div class="app-miscellaneous-title app-title-styling">
+                            <h3>My App #5</h3>
+                            <p>HTML/CSS</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- about this site -->
-        <section class="section-about-site">
-            <h2>why this site?</h2>
+        <!-- SECTION CONTACT ME -->
+        <section class="display-flex-row-wrap" id="id-contact-me">
+            <div class="wrap-section-title">
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+
+            <div class="wrap-section-content">
+                <p>
+                    Again, welcome to my website! I started coding only in December 2021, when I enrolled in a coding bootcamp. So, this page
+                </p>
+            </div>
         </section>
 
 

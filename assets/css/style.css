@@ -6,7 +6,7 @@
     --my-red: firebrick;
     --my-p-font-size: 20px;
     --my-std-border: solid 2px black;
-    --my-std-border2: solid 2px var(--my-white);
+    --my-std-border2: solid 5px var(--my-white);
 }
 /* Explicitly remove any pre-exisiting margin or padding the browser
    may try to force on elements in the web page. */ 
@@ -87,19 +87,20 @@ header nav ul li a {
 
 /* SECTION STYLING BEGINS */
 section {
-    margin: 10px 0px;
-    border: solid 2px black;
-    padding: 25px 25px 25px 100px;
+    margin: 25px 0px;
+    /* border: var(--my-std-border); */
+    padding: 25px 25px 25px 10px;
 }
 
-#id-about-me, #id-my-work {
-    flex-wrap: nowrap;
+.banner {
+    background-image: url("../images/pic00.jpg");
+    background-size: cover;
+    height: 350px;
 }
 
-.wrapper-section-title {
+.wrap-section-title {
     margin-right: 25px;
     border-right: solid 5px var(--my-white);
-    /* border: var(--my-std-border2); */
     padding-right: 10px;
     display: flex;
     flex: 0 1 25%;
@@ -107,65 +108,75 @@ section {
     justify-content: flex-end;
 }
 
-.wrapper-section-content {
-    border: var(--my-std-border2);
-    font-size: 1vw;
-    flex: 100%;
-}
-
 .section-title {
     font-size: 3vw;
 }
 
-.wrapper-flagship-application {
+#id-about-me, #id-my-work {
+    flex-wrap: nowrap;
+}
+
+.wrap-section-content {
+    font-size: 1vw;
+    flex: 100%;
+}
+
+.wrap-app-flagship {
     height: 600px;
-    margin-bottom: 25px;
-    border: solid 4px green;
-    background-image: url("../images/pic01.jpg");
-    background-size: cover;
+    margin-bottom: 50px;
+    border: var(--my-std-border2);
+    background-color: darkseagreen;
 }
 
-.wrapper-miscellaneous-application {
-    background-color: yellow;
+#id-app-flagship-title {
+    top: 475px;
 }
 
-.miscellaneous-product {
-
+#id-app-flagship-title h3 {
+    padding-bottom: 0px;
+    background-color: var(--my-white);
+    width: 250px;
+    font-size: 2vw;
 }
 
-/* #miscellaneous-application-1 {
-    
-} */
-
-/* #miscellaneous-application-2 {
-    
-} */
-
-/* #miscellaneous-application-3 {
-    
-} */
-
-/* #miscellaneous-application-4 {
-    
-} */
-
-/* .wrapper-section-title p {
-    border: solid 2px black;
-    margin-bottom: 5px;
+#id-app-flagship-title p {
+    background-color: var(--my-white);
+    width: 250px;
+    font-size: 1vw;
 }
-.wrapper-section-title h2 {
-    border: solid 2px black;
-    margin-bottom: 5px;
-} */
 
-
-/* UTILITIES */
-.display-flex-row-wrap {
-    display: flex;
-    flex-flow: row wrap; 
+.wrap-app-miscellaneous {
+    border: solid 5px black;
+    justify-content: space-between;
 }
-.display-inline-block {
-    display: inline-block;
+
+.app-miscellaneous { /* The miscellaneous apps are flex items because their parent container is a flex box */
+    height: 250px;
+    width: 650px;
+    border: var(--my-std-border2);
+    margin: 25px 0;
+}
+
+.app-miscellaneous-title {
+    top: 120px;
+}
+.app-miscellaneous h3 {
+    background-color: var(--my-white);
+    width: 250px;
+    font-size: 2vw;
+}
+
+#id-app-2 {
+    background-color: tomato;
+}
+#id-app-3 {
+    background-color: orange;
+}
+#id-app-4 {  
+    background-color: dodgerblue;
+}
+#id-app-5 {
+    background-color: mediumseagreen;
 }
 
 
@@ -193,13 +204,28 @@ section {
 .div-hero-form h2 {
     /* In case I need to style h2 */
 }
-
 .div-hero-form p {
     margin: 10px 0 10px 0;
 }
-
 .form-input {
     display: block;
     margin-bottom: 15px;
     width: 50%;
+}
+
+/***** UTILITIES *****/
+.display-flex-row-wrap {
+    display: flex;
+    flex-flow: row wrap; 
+}
+.display-inline-block {
+    display: inline-block;
+}
+.app-title-styling {
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 100px;
+    background-color: var(--my-white);
+    display: inline-block;
+    position: relative;
 }
