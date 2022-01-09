@@ -1,0 +1,205 @@
+/* Stylesheet for jcomp-03's personal website */
+
+:root {
+    --my-white: blanchedalmond;
+    --my-gray: lightslategray;
+    --my-red: firebrick;
+    --my-p-font-size: 20px;
+    --my-std-border: solid 2px black;
+    --my-std-border2: solid 2px var(--my-white);
+}
+/* Explicitly remove any pre-exisiting margin or padding the browser
+   may try to force on elements in the web page. */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px 10px;
+    border: var(--my-std-border);
+    padding: 50px 0px;
+    background-color: var(--my-gray);
+    font-family: Arial, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: var(--my-p-font-size);
+    color: var(--my-red);
+    /* background-image: url("LogoABB.svg"), url("fistandbolt.svg");
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-clip: border-box, border-box;
+    background-origin: content-box;
+    background-size: contain, cover;
+    background-attachment: scroll; */
+}
+
+header {
+    /* border: var(--my-std-border2); */
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: var(--my-gray);
+    font-family: cursive;
+}
+
+header h1 {
+    /* border: var(--my-std-border2); */
+    font-size: 45px;
+    font-family: cursive;
+}
+
+header h1::first-letter {
+    color: var(--my-red);
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--my-white);
+}
+
+header nav {
+    /* border: var(--my-std-border2); */
+    display:flex;
+    align-items: center;
+    background-image: url("../images/panorama-rainforest.jpg");
+    background-position: 65% 60%;
+    /* background-image: linear-gradient(to left, var(--my-gray), var(--my-red)); */
+}
+
+header nav ul {
+    /* border: var(--my-std-border2); */
+}
+
+header nav ul li {
+    /* border: var(--my-std-border); */
+    display: inline;
+    margin-right: 35px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--my-white);
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+/* SECTION STYLING BEGINS */
+section {
+    margin: 10px 0px;
+    border: solid 2px black;
+    padding: 25px 25px 25px 100px;
+}
+
+#id-about-me, #id-my-work {
+    flex-wrap: nowrap;
+}
+
+.wrapper-section-title {
+    margin-right: 25px;
+    border-right: solid 5px var(--my-white);
+    /* border: var(--my-std-border2); */
+    padding-right: 10px;
+    display: flex;
+    flex: 0 1 25%;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.wrapper-section-content {
+    border: var(--my-std-border2);
+    font-size: 1vw;
+    flex: 100%;
+}
+
+.section-title {
+    font-size: 3vw;
+}
+
+.wrapper-flagship-application {
+    height: 600px;
+    margin-bottom: 25px;
+    border: solid 4px green;
+    background-image: url("../images/pic01.jpg");
+    background-size: cover;
+}
+
+.wrapper-miscellaneous-application {
+    background-color: yellow;
+}
+
+.miscellaneous-product {
+
+}
+
+/* #miscellaneous-application-1 {
+    
+} */
+
+/* #miscellaneous-application-2 {
+    
+} */
+
+/* #miscellaneous-application-3 {
+    
+} */
+
+/* #miscellaneous-application-4 {
+    
+} */
+
+/* .wrapper-section-title p {
+    border: solid 2px black;
+    margin-bottom: 5px;
+}
+.wrapper-section-title h2 {
+    border: solid 2px black;
+    margin-bottom: 5px;
+} */
+
+
+/* UTILITIES */
+.display-flex-row-wrap {
+    display: flex;
+    flex-flow: row wrap; 
+}
+.display-inline-block {
+    display: inline-block;
+}
+
+
+
+.section-hero {
+    background-image: url("../images/panorama-rainforest.jpg");
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    border: var(--my-std-border);
+}
+
+.div-hero-form {
+    border: solid 3px blanchedalmond;
+    padding: 10px;
+    width: 550px;
+    height: 300px;
+    position: relative;
+    left: 25px;
+    background-color: rgba(119, 136, 153, 0.65);
+}
+
+.div-hero-form h2 {
+    /* In case I need to style h2 */
+}
+
+.div-hero-form p {
+    margin: 10px 0 10px 0;
+}
+
+.form-input {
+    display: block;
+    margin-bottom: 15px;
+    width: 50%;
+}

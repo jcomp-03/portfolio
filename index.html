@@ -1,0 +1,127 @@
+<!--
+AS AN employer
+I WANT to view a potential employee's deployed portfolio of work samples
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>jcomp-03's page</title>
+
+        <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="./assets/images/favicon-16x16.png" rel="icon" type="">
+    </head>
+
+    <!-- <body> follows the <head>. Represents root content section of HTML document. There can be only one. -->
+    <body>
+        <header>
+            <h1 class="header-my-name">
+                <a href="/">jcomp-03</a>
+            </h1>
+            <!-- <nav> to provide navigational links within current document or to other documents -->
+            <nav>
+                <ul type="square">
+                    <li><a href="#about-me">about me</a></li>
+                    <li><a href="#about-site">about this site</a></li>
+                    <li><a href="#my-work">my work</a></li>
+                    <li><a href="#contact-me">contact me</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- SECTION ABOUT ME -->
+        <section class="display-flex-row-wrap" id="id-about-me">
+            <div class="wrapper-section-title">
+                <h2 class="section-title">About Me!</h2>
+            </div>
+
+            <div class="wrapper-section-content">
+                <p>
+                    Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
+                    Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
+                    Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
+                    At sed debet facete, est at nibh oratio veritus. Suas erroribus ne cum, eos et case partem ancillae.
+                    <br><br>
+                    Odio populo petentium id eam. Vix eu laoreet principes.
+                    Viris recteque postulant no eos, homero phaedrum eum id, nec no wisi invenire. 
+                    Mei id atqui honestatis, et nec dolor feugiat definitionem, sea et sale habemus incorrupte. 
+                    Vix vero accommodare id, sea alterum elaboraret eloquentiam ad, te mea tamquam voluptua voluptaria.
+                    
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION MY WORK -->
+        <section class="display-flex-row-wrap" id="id-my-work">
+            <div class="wrapper-section-title">
+                <h2 class="section-title">My Work</h2>
+            </div>
+
+            <div class="wrapper-section-content">
+                <div class="wrapper-flagship-application">
+                    <p>Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
+                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
+                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
+                    </p>
+                </div>
+
+                <div class="wrapper-miscellaneous-application display-flex-row-wrap">
+                    <!-- Create 4 container divs for correponding images/applications -->
+                    <div class="miscellaneous-application" id="miscellaneous-application-1">
+                        Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
+                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
+                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut. 
+                    </div>
+                    <div class="miscellaneous-application" id="miscellaneous-application-2">
+                        Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
+                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
+                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
+                    </div>
+                    <div class="miscellaneous-application" id="miscellaneous-application-3">
+                        Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
+                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
+                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
+                    </div>
+                    <div class="miscellaneous-application" id="miscellaneous-application-4">
+                        Lorem ipsum dolor sit amet, mei cu accusamus consetetur, simul quidam posidonium no duo, numquam fuisset pro ea. 
+                        Erat habemus salutatus ut qui. Id est ridens semper, pro quot lobortis no, ut harum instructior duo. Ea falli qualisque efficiantur duo.
+                        Vis ex unum elit percipitur, pri dicit admodum ad, hinc sonet vis ut.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about this site -->
+        <section class="section-about-site">
+            <h2>why this site?</h2>
+        </section>
+
+
+        <!-- miscellaneous -->
+        <section class="section-miscellaneous">
+            <h2>miscellaneous things I consider interesting</h2>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <h2>placeholder text for the footer!</h2>
+        </footer>
+    </body>
+
+</html>
