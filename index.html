@@ -1,39 +1,18 @@
-<!--
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
--->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>jcomp-03's page</title>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
         <link href="./assets/images/favicon-16x16.png" rel="icon" type="">
+        <title>jcomp-03's page</title>
     </head>
 
     <!-- <body> follows the <head>. Represents root content section of HTML document. There can be only one. -->
     <body>
         <header>
-            <h1 class="header-my-name">
-                <a href="/">hello visitor, welcome to my website!</a>
-            </h1>
+            <h1><a href="/">Hi visitor, welcome to my website!</a></h1>
+            
             <!-- <nav> to provide navigational links within current document or to other documents -->
             <nav>
                 <ul type="square">
@@ -45,27 +24,41 @@ THEN I am presented with a responsive layout that adapts to my viewport
             </nav>
         </header>
         
-        <!-- SECTION BANNER -->
-        <section class="display-flex-row-wrap banner">
+
+        <!-- Section banner -->
+        <section class="display-flex-row-nowrap banner">
         </section>
 
-        <!-- SECTION ABOUT ME -->
-        <section class="display-flex-row-wrap" id="id-about-me">
+
+        <!-- Section about me -->
+        <section class="display-flex-row-nowrap" id="id-about-me">
             <div class="wrap-section-title">
                 <h2 class="section-title">About Me!</h2>
             </div>
 
             <div class="wrap-section-content">
                 <p>
-                    Again, welcome to my website! I started coding only in December 2021, when I enrolled in a coding bootcamp. So, this page
+                    Again, welcome to my website! My name is James, and I started coding in December 2021, when I enrolled in a coding bootcamp. So, this page
                     from which you are reading this text is a proverbial <em>work-in-progress</em>. I decided to enroll in this boot camp for a lot of
                     reasons, but in a nutshell, I wanted to try something new for my profession.
                     <br><br>
                     For a little background on who I am, I was born in Ireland, raised in Miami, Florida, and have lived in a number of different
                     cities since moving away from home after high school. Those cities are New York, Atlanta, Albuquerque, Portland, and Lima (Peru, that is!).
-                    I have had great experiences living in those cities, each of which taught me valuable nuggets of wisdom and helped me form my world perspective.
+                    I have had great experiences living in those cities, each of which taught me valuable new things and helped me form my world perspective.
                     If I had to choose which city I look back on most fondly, I think I would select Portland; the Pacific Northwest is absolutely stunning
-                    and offers a balanced city-and-outdoors lifestyle.
+                    and offers a balanced, pleasant city-and-outdoors lifestyle.
+                    <br><br>
+                    seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
+                    messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
+                    Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
+                    tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
+                    probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
+                    <br><br>
+                    seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
+                    messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
+                    Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
+                    tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
+                    probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
                     <br><br>
                     seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
                     messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
@@ -82,20 +75,23 @@ THEN I am presented with a responsive layout that adapts to my viewport
             </div>
         </section>
 
-        <!-- SECTION MY WORK -->
-        <section class="display-flex-row-wrap" id="id-my-work">
+
+        <!-- Section my work -->
+        <section class="display-flex-row-nowrap" id="id-my-work">
             <div class="wrap-section-title">
                 <h2 class="section-title">My Work</h2>
             </div>
 
             <div class="wrap-section-content">
                 <div class="wrap-app-flagship">
+                    <!-- Div for flagship app title -->
                     <div class="app-title-styling" id="id-app-flagship-title">
                         <h3>My App #1</h3>
                         <p>MERN Stack</p>
                     </div>
                 </div>
 
+                <!-- The miscellaneous apps which are not the flagship app -->
                 <div class="wrap-app-miscellaneous display-flex-row-wrap" id="id-my-miscellaneous-apps">
                     <!-- Create 4 container divs for correponding images/applications -->
                     <div class="app-miscellaneous" id="id-app-2">
@@ -118,7 +114,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
                     </div>
                     <div class="app-miscellaneous" id="id-app-5">
                         <div class="app-miscellaneous-title app-title-styling">
-                            <h3>My App #5</h3>
+                            <h3><a href="https://jcomp-03.github.io/run-buddy/">Run Buddy</a></h3>
                             <p>HTML/CSS</p>
                         </div>
                     </div>
@@ -126,29 +122,36 @@ THEN I am presented with a responsive layout that adapts to my viewport
             </div>
         </section>
 
-        <!-- SECTION CONTACT ME -->
-        <section class="display-flex-row-wrap" id="id-contact-me">
+
+        <!-- Section contact me -->
+        <section class="display-flex-row-nowrap" id="id-contact-me">
             <div class="wrap-section-title">
                 <h2 class="section-title">Contact Me</h2>
             </div>
 
             <div class="wrap-section-content">
-                <p>
-                    Again, welcome to my website! I started coding only in December 2021, when I enrolled in a coding bootcamp. So, this page
-                </p>
+                <nav>
+                    <ul>
+                        <li><a href="/">(555) 555-5555</a></li>
+                        <li><a href="/">jcomp_03@yahoo.com</a></li>
+                        <li><a href="/">GitHub</a></li>
+                        <li><a href="/">Placeholder text</a></li>
+                    </ul>
+                </nav>
             </div>
         </section>
 
 
-        <!-- miscellaneous -->
-        <section class="section-miscellaneous">
-            <h2>miscellaneous things I consider interesting</h2>
+        <!-- Section resume -->
+        <section class="display-flex-row-nowrap" id="id-my-resume">
+            <div class="wrap-section-title">
+                <h2 class="section-title">Resume</h2>
+            </div>
+
+            <div class="wrap-section-content">
+                <h3>Forthcoming</h3>
+            </div>
         </section>
 
-        <!-- footer -->
-        <footer>
-            <h2>placeholder text for the footer!</h2>
-        </footer>
     </body>
-
 </html>
