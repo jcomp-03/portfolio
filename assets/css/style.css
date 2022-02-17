@@ -48,14 +48,13 @@ header {
 }
 
 header div {
-    border: solid 2px pink;
+    /* border: solid 2px pink; */
 }
 
 header div span {
-    /* border: solid 2px yellow; */
     font-family: 'Patua One', cursive;
     color: var(--textColor1);
-    font-size: 3.5em;
+    font-size: 5.0em;
     white-space: pre;
     opacity: 0;
 }
@@ -80,7 +79,15 @@ header div span {
 
 
 /* ABOUT ME STYLING */
+#id-title-about-me {
+    font-family: 'Patua One', cursive;
+    font-size: 4.0em;
+    border-bottom: solid 2px yellow;
+    max-width: 50%;
+}
+
 .class-about-me-text {
+    font-family: 'Source Code Pro', monospace;
     font-size: 1.5em;
 }
 
@@ -89,7 +96,6 @@ header div span {
     max-height: 500px;
     display: block;
 }
-
 
 /* Style the div wrapper as required */
 .wrap-section-title {
