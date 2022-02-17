@@ -3,32 +3,88 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="./assets/css/style.css" rel="stylesheet">
         <link href="./assets/images/favicon-16x16.png" rel="icon" type="">
-        <title>jcomp-03's page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Patua+One&display=swap" rel="stylesheet">
+
+
+        <title>jcomp-03's webpage</title>
     </head>
 
-    <!-- <body> follows the <head>. Represents root content section of HTML document. There can be only one. -->
+    <!-- <body> follows the <head> -->
     <body>
         <header>
-            <h1><a href="/">Hi visitor, welcome to my website!</a></h1>
+            <div>
+                <span class="intro-text-1">&lt;</span>
+                <span class="intro-text-2">h</span>
+                <span class="intro-text-3">1</span>
+                <span class="intro-text-4">&gt;</span>
+                <span class="intro-text-5">W</span>
+                <span class="intro-text-6">e</span>
+                <span class="intro-text-7">l</span>
+                <span class="intro-text-8">c</span>
+                <span class="intro-text-9">o</span>
+                <span class="intro-text-10">m</span>
+                <span class="intro-text-11">e</span>
+                <span class="intro-text-12">,</span>
+                <span class="intro-text-13">&#32;</span>
+                <span class="intro-text-14">s</span>
+                <span class="intro-text-15">t</span>
+                <span class="intro-text-16">a</span>
+                <span class="intro-text-17">y</span>
+                <span class="intro-text-18">&#32;</span>
+                <span class="intro-text-19">a</span>
+                <span class="intro-text-20">&#32;</span>
+                <span class="intro-text-21">m</span>
+                <span class="intro-text-22">o</span>
+                <span class="intro-text-23">m</span>
+                <span class="intro-text-24">e</span>
+                <span class="intro-text-25">n</span>
+                <span class="intro-text-26">t</span>
+                <span class="intro-text-27">!</span>
+                <span class="intro-text-28">&lt;</span>
+                <span class="intro-text-29">&#47;</span>
+                <span class="intro-text-30">h</span>
+                <span class="intro-text-31">1</span>
+                <span class="intro-text-32">&gt;</span>
+
+            </div>
             
-            <!-- <nav> to provide navigational links within current document or to other documents -->
-            <nav>
-                <ul type="square">
-                    <li><a href="#id-about-me">about me</a></li>
-                    <li><a href="#id-my-work">my work</a></li>
-                    <li><a href="#id-contact-me">contact me</a></li>
-                    <li><a href="#id-my-resume">my resume</a></li>
-                </ul>
-            </nav>
+            <ul class="nav class-ul">
+                <li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-about-me">about me</a></li>
+                <li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-my-work">my work</a></li>
+                <li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-contact-me">contact me</a></li>
+                <li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-my-resume">my resume</a></li>
+            </ul>
         </header>
-        
 
-        <!-- Section banner -->
-        <section class="display-flex-row-nowrap banner">
-        </section>
-
+        <div class="container main-container border-me-thick">
+            <div class="row" id="id-about-me">
+                <div class="col-8 class-about-me-text border-me">
+                    Thank you for visiting my webpage.<br>
+                    I'm a full-stack web developer recently graduated from the University of Miami's<br>
+                    Division of Continuing & International Education Online Coding Bootcamp in June 2022.<br>
+                    Prior to this bootcamp, I worked in sales of transmission and distribution equipment<br>
+                    for a family-owned company for close to 7 years--mostly in Peru in South America (yes, I've tried<br>
+                    and love ceviche). And before that, I worked as a process engineer for Intel Corporation in<br>
+                    New Mexico and Oregon.
+                    <br><br>
+                    I embarked on this professional pivot for different reasons, but principally due to what I see<br>
+                    as <em>software eating the world</em>, to borrow the words of Marc Andreessen. The knowledge I have<br>
+                    earned and technologies I have learned over the last 6 months have made me more optimistic about<br>
+                    the future and my place in it. If you care for my resume, you can download it <em>here</em>
+                </div>
+                <div class="col class-head-profile">
+                    <img src="./assets/images/christmas-spirit-7-5-aspect-ratio.jpg" class="img-fluid mx-auto"  id="id-head-profile" alt="A head profile of James wearing a festive Christmas hat.">
+                </div>
+            </div>
+            
+        </div>
 
         <!-- Section about me -->
         <section class="display-flex-row-nowrap" id="id-about-me">
@@ -51,26 +107,6 @@
                     seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
                     messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
                     Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
-                    tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
-                    probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
-                    <br><br>
-                    seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
-                    messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
-                    Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
-                    tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
-                    probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
-                    <br><br>
-                    seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
-                    messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
-                    Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
-                    tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
-                    probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
-                    <br><br>
-                    seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
-                    messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
-                    Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
-                    tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
-                    probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
                 </p>
             </div>
         </section>
@@ -86,8 +122,8 @@
                 <div class="wrap-app-flagship">
                     <!-- Div for flagship app title -->
                     <div class="app-title-styling" id="id-app-flagship-title">
-                        <h3>My App #1</h3>
-                        <p>MERN Stack</p>
+                        <h3><a href="https://jcomp-03.github.io/Project-1-RWD-Movie-Search-Platform/">RWD Movie Search App</a></h3>
+                        <p>JavaScript, HTML, CSS (Bulma)</p>
                     </div>
                 </div>
 
@@ -153,5 +189,7 @@
             </div>
         </section>
 
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

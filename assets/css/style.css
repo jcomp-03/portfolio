@@ -2,12 +2,18 @@
 
 /* DECLARING SOME VARIABLES WHICH MAY BE USED AS STYLING PROGRESSES */
 :root {
-    --my-white: blanchedalmond;
-    --my-gray: lightslategray;
-    --my-red: firebrick;
-    --my-p-font-size: 20px;
-    --my-std-border: solid 2px black;
-    --my-std-border2: solid 5px var(--my-white);
+    --textColor1: rgba(196,158,101,1);
+    --textColor1Alpha: rgb(196, 158, 101, 0.5);
+    --textColor2: rgba(178,34,34,1);
+    --textColor2Alpha: rgba(178,34,34,0.5);
+    --colorMain1: rgba(180,180,180,1);
+    --colorMain2: rgba(120,120,120,1);
+    --colorMain3: rgba(90,90,90,1);
+    --colorMain4: rgba(60,60,60,1);
+    --colorMain5: rgb(0,0,0);
+    --stdFontSize: 12px;
+    --stdBorder1: solid 2px var(--textColor1);
+    --stdBorder2: solid 5px var(--textColor2);
 }
 
 /* ZERO OUT ANY USER-AGENT-ASSIGNED MARGINS, PADDINGS, ETC. */ 
@@ -17,86 +23,78 @@
     box-sizing: border-box;
 }
 
-/* BODY STYLING BEGINS -- THESE PROPERTIES MAY BE OVERWRITTEN AS STYLING PROGRESSES DOWNWARD */
+/* BODY STYLING BEGINS */
 body {
-    margin: 10px 10px;
-    /* border: var(--my-std-border); */
-    padding: 50px 0px;
-    background-color: var(--my-gray);
+    background-color: var(--colorMain1);
+    /* background-image: linear-gradient(var(--colorMain1), var(--colorMain5)); */
     font-family: Arial, Verdana, sans-serif;
     font-weight: normal;
-    font-size: var(--my-p-font-size);
-    color: var(--my-red);
+    font-size: var(--stdFontSize);
+    color: var(--textColor2);
 }
 /* BODY STYLING ENDS */
 
+
 /* HEADER STYLING BEGINS */
 header {
+    border: solid 2px yellow;
+    padding: 1em 0;
     display: flex;
+    flex-direction: column;
     justify-content:space-between;
-    align-content: center;
-    /* border: var(--my-std-border); */
+    align-items: center;
+    background-image: linear-gradient(var(--colorMain5), var(--colorMain1));
+    height: 15em;
 }
 
-header h1 {
-    display: inherit;
-    align-items: center;
+header div {
+    border: solid 2px pink;
+}
+
+header div span {
     /* border: solid 2px yellow; */
-    font-size: 3vw;
-    font-family: cursive;
+    font-family: 'Patua One', cursive;
+    color: var(--textColor1);
+    font-size: 3.5em;
+    white-space: pre;
+    opacity: 0;
 }
 
-header h1 a {
-    text-decoration: none;
-    color: var(--my-red);
+.class-ul {
+    border: solid 2px pink;
+    justify-content:space-evenly;
+    /* width: 40%; */
+    /* height: auto; */
 }
 
-header nav {
-    height: 130px;
-    display: inherit;
-    align-items: center;
-    background-image: url("../images/panorama-rainforest.jpg");
-    background-position: 65% 60%;
+.class-ul-li {
+    margin: 0 1em;
 }
 
-header nav ul {
-    display: inherit;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 25px;
-    margin-left: 25px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: var(--my-white);
-    font-weight: bolder;
-    font-size: 26px;
+.class-ul-li-a {
+    font-family: 'Concert One', cursive;
+    color: var(--textColor2);
+    font-size: 2.5em;
 }
 /* HEADER STYLING ENDS */
 
 
-/* SECTION STYLING BEGINS */
-section {
-    margin: 0px 0px;
-    padding: 25px 25px 25px 10px;
+/* ABOUT ME STYLING */
+.class-about-me-text {
+    font-size: 1.5em;
 }
 
-/* SECTION banner STYLING BEGINS */
-.banner {
-    background-image: url("../images/pic00.jpg");
-    background-size: cover;
-    height: 350px;
+#id-head-profile {
+    border-radius: 300px;
+    max-height: 500px;
+    display: block;
 }
-/* SECTION banner STYLING ENDS */
 
-/* SECTION work STYLING BEGINS */
+
 /* Style the div wrapper as required */
 .wrap-section-title {
     margin-right: 25px;
-    border-right: solid 5px var(--my-white);
+    border-right: solid 5px var(--textColor1);
     padding-right: 10px;
     display: flex;
     flex: 0 1 25%;
@@ -119,7 +117,7 @@ section {
 .wrap-app-flagship {
     height: 600px;
     margin-bottom: 50px;
-    border: var(--my-std-border2);
+    border: var(--stdBorder2);
     background-color: darkseagreen;
 }
 
@@ -132,13 +130,13 @@ section {
 }
 
 #id-app-flagship-title h3 {
-    background-color: var(--my-white);
+    background-color: var(--textColor1);
     width: 250px;
     font-size: 2vw;
 }
 
 #id-app-flagship-title p {
-    background-color: var(--my-white);
+    background-color: var(--textColor1);
     width: 250px;
     font-size: 1vw;
 }
@@ -150,7 +148,7 @@ section {
 .app-miscellaneous { /* The miscellaneous apps are flex items because their parent container is a flex box */
     height: 250px;
     width: 650px;
-    border: var(--my-std-border2);
+    border: var(--stdBorder2);
     margin: 25px 0;
 }
 
@@ -165,7 +163,7 @@ section {
 
 .app-miscellaneous a {
     text-decoration: none;
-    color: var(--my-red);
+    color: var(--textColor2);
 }
 
 #id-app-2 {
@@ -212,11 +210,19 @@ section {
 }
 #id-contact-me .wrap-section-content nav ul li a {
     text-decoration: none;
-    color: var(--my-red);
+    color: var(--textColor2);
     font-weight: bolder;
     font-size: 1.2vw;
 }
 /* SECTION contact me STYLING ENDS */
+
+/* PSEUD0-CLASSES & PSEUDO-ELEMENTS */
+.class-ul-li:hover {
+    transform: scale(1.3, 1.3);
+}
+.class-ul-li-a:hover {
+    color: var(--textColor1);
+}
 
 /***** UTILITIES *****/
 .display-flex-row-nowrap {
@@ -231,11 +237,18 @@ section {
     padding-top: 10px;
     padding-left: 20px;
     height: 100px;
-    background-color: var(--my-white);
+    background-color: var(--textColor1);
     display: inline-block;
     position: relative;
 }
 
+.border-me {
+    border: var(--stdBorder1);
+}
+
+.border-me-thick {
+    border: var(--stdBorder2);
+}
 /***** MEDIA QUERIES *****/
 
 /***** MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER *****/
@@ -292,3 +305,41 @@ section {
 
 
 }
+
+@keyframes changeOpacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.intro-text-1 {animation: 100ms changeOpacity 1.0s 1 forwards normal;}
+.intro-text-2 {animation: 100ms changeOpacity 1.5s 1 forwards normal;}
+.intro-text-3 {animation: 100ms changeOpacity 2.0s 1 forwards normal;}
+.intro-text-4 {animation: 100ms changeOpacity 2.5s 1 forwards normal;}
+.intro-text-5 {animation: 100ms changeOpacity 3.0s 1 forwards normal;}
+.intro-text-6 {animation: 100ms changeOpacity 3.5s 1 forwards normal;}
+.intro-text-7 {animation: 100ms changeOpacity 4.0s 1 forwards normal;}
+.intro-text-8 {animation: 100ms changeOpacity 4.5s 1 forwards normal;}
+.intro-text-9 {animation: 100ms changeOpacity 5.0s 1 forwards normal;}
+.intro-text-10 {animation: 100ms changeOpacity 5.5s 1 forwards normal;}
+.intro-text-11 {animation: 100ms changeOpacity 6.0s 1 forwards normal;}
+.intro-text-12 {animation: 100ms changeOpacity 6.5s 1 forwards normal;}
+.intro-text-13 {animation: 100ms changeOpacity 7.0s 1 forwards normal;}
+.intro-text-14 {animation: 100ms changeOpacity 7.5s 1 forwards normal;}
+.intro-text-15 {animation: 100ms changeOpacity 8.0s 1 forwards normal;}
+.intro-text-16 {animation: 100ms changeOpacity 9.0s 1 forwards normal;}
+.intro-text-17 {animation: 100ms changeOpacity 9.5s 1 forwards normal;}
+.intro-text-18 {animation: 100ms changeOpacity 10.0s 1 forwards normal;}
+.intro-text-19 {animation: 100ms changeOpacity 10.5s 1 forwards normal;}
+.intro-text-20 {animation: 100ms changeOpacity 11.0s 1 forwards normal;}
+.intro-text-21 {animation: 100ms changeOpacity 11.5s 1 forwards normal;}
+.intro-text-22 {animation: 100ms changeOpacity 12.0s 1 forwards normal;}
+.intro-text-23 {animation: 100ms changeOpacity 12.5s 1 forwards normal;}
+.intro-text-24 {animation: 100ms changeOpacity 13.0s 1 forwards normal;}
+.intro-text-25 {animation: 100ms changeOpacity 13.5s 1 forwards normal;}
+.intro-text-26 {animation: 100ms changeOpacity 14.0s 1 forwards normal;}
+.intro-text-27 {animation: 100ms changeOpacity 14.5s 1 forwards normal;}
+.intro-text-28 {animation: 100ms changeOpacity 15.0s 1 forwards normal;}
+.intro-text-29 {animation: 100ms changeOpacity 15.5s 1 forwards normal;}
+.intro-text-30 {animation: 100ms changeOpacity 16.0s 1 forwards normal;}
+.intro-text-31 {animation: 100ms changeOpacity 16.5s 1 forwards normal;}
+.intro-text-32 {animation: 100ms changeOpacity 17.0s 1 forwards normal;}
