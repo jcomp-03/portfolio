@@ -79,19 +79,14 @@ header div span {
 
 
 /* ABOUT ME STYLING */
-#id-title-about-me {
-    font-family: 'Patua One', cursive;
-    font-size: 4.0em;
-    border-bottom: solid 2px yellow;
-    max-width: 50%;
+#id-about-me {
+    border-bottom: double 10px var(--colorMain5);
+    margin-bottom: 4em;
 }
 
-.class-about-me-text {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1.5em;
-}
 
 #id-head-profile {
+    margin-bottom: 4em;
     border-radius: 300px;
     max-height: 500px;
     display: block;
@@ -231,6 +226,19 @@ header div span {
 }
 
 /***** UTILITIES *****/
+.class-section-title {
+    font-family: 'Patua One', cursive;
+    font-size: 4.0em;
+    border-bottom: solid 5px var(--textColor1);
+    max-width: 50%;
+    margin-bottom: 1em;
+}
+
+.class-website-text {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5em;
+}
+
 .display-flex-row-nowrap {
     display: flex;
     flex-flow: row nowrap; 
