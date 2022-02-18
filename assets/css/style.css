@@ -62,8 +62,6 @@ header div span {
 .class-ul {
     border: solid 2px pink;
     justify-content:space-evenly;
-    /* width: 40%; */
-    /* height: auto; */
 }
 
 .class-ul-li {
@@ -84,30 +82,31 @@ header div span {
     margin-bottom: 4em;
 }
 
-
-#id-head-profile {
+#id-about-me-profile-shot {
     margin-bottom: 4em;
     border-radius: 300px;
     max-height: 500px;
     display: block;
 }
+/* ABOUT ME STYLING ENDS */
 
-/* Style the div wrapper as required */
-.wrap-section-title {
-    margin-right: 25px;
-    border-right: solid 5px var(--textColor1);
-    padding-right: 10px;
-    display: flex;
-    flex: 0 1 25%;
-    align-items: flex-start;
-    justify-content: flex-end;
+/* WORK PORTFOLIO STYLING */
+.class-banner-card-body {
+    padding: 1.5em 1.5em 1.5em 10em;
+    background-color: var(--textColor2);
+    border: solid 5px var(--textColor2);
+    border-radius: 20px;
 }
 
-/* Style the section title */
-.section-title {
-    text-align: right;
-    font-size: 3vw;
+.class-card-body {
+    padding: 1.5em;
+    background-color: var(--textColor2);
+    border: solid 5px var(--textColor2);
+    border-radius: 20px;
 }
+
+/* WORK PORTFOLIO STYLING ENDS*/
+
 
 /* Style the div wrapper as required */
 .wrap-section-content {
@@ -255,10 +254,23 @@ header div span {
     display: inline-block;
     position: relative;
 }
-
+.card-app-height {
+    min-height: 25em;
+}
 .border-me {
     border: var(--stdBorder1);
 }
+.border-me-yellow {
+    border: solid 4px yellow;
+}
+.border-me-green {
+    border: solid 4px green;
+}
+.border-me-pink {
+    border: solid 4px pink;
+}
+
+
 
 .border-me-thick {
     border: var(--stdBorder2);

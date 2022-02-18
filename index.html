@@ -62,7 +62,8 @@
             </ul>
         </header>
 
-        <div class="container main-container border-me-thick">
+        <!-- Main container -->
+        <div class="container" id="id-container">
             <div class="row justify-content-center mx-auto class-section-title" id="id-title-about-me">some words about me</div>
             <div class="row" id="id-about-me">
                 <div class="col-8 class-website-text" id="id-about-me-text">
@@ -82,14 +83,14 @@
                     the future and my place in it. If you care for my resume, you can download it <em>here</em>.
                 </div>
                 <div class="col class-head-profile">
-                    <img src="./assets/images/christmas-spirit-7-5-aspect-ratio.jpg" class="img-fluid mx-auto"  id="id-head-profile" alt="A head profile of James wearing a festive Christmas hat.">
+                    <img src="./assets/images/christmas-spirit-7-5-aspect-ratio.jpg" class="img-fluid mx-auto"  id="id-about-me-profile-shot" alt="A head profile of James wearing a festive Christmas hat.">
                 </div>
             </div>
 
 
             <div class="row justify-content-center mx-auto class-section-title" id="id-title-my-work">work portfolio</div>
             <div class="row class-website-text">
-                <p>
+                <p class="border-me">
                     Here you can find my portfolio of projects which I've authored during the course of December 2021 through June 2022.
                     <br><br>
                     Rome was not built in a day...
@@ -97,23 +98,78 @@
             </div>
             
             <!-- Banner application -->
-            <div class="row">
-                <div class="col-10 mx-auto">
+            <div class="row mb-5">
+                <div class="col class-banner-card-body">
                     <div class="card">
                         <img src="./assets/images/Project-1-still.JPG" class="card-img-top" alt="Placeholder text">
                         <div class="card-body">
                             <h5 class="card-title">IMBD</h5>
-                            <p class="card-text">Placeholder text until I determine what information to store here.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere (when you've decided where to go).</a>
+                            <p class="card-text">A movie search platform; distinctly original.</p> <!-- https://gfycat.com/plushbriskangelwingmussel -->
+                            <a href="https://github.com/jcomp-03/Project-1-RWD-Movie-Search-Platform" class="btn btn-success" target="_blank">Go to the GitHub repo</a>
+                            <a href="https://jcomp-03.github.io/Project-1-RWD-Movie-Search-Platform/" class="btn btn-success" target="_blank">Visit the deployed app</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            
+            <!-- Other applications -->
+            <div class="row border-me card-app-height mb-5">
+                
+                <div class="col-5 class-card-body mb-3">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Weather Dashboard</h5>
+                          <p class="card-text">Care to know the weather anywhere in the world? This app has you covered!</p>
+                          <a href="https://github.com/jcomp-03/wk6-weather-dashboard" class="btn btn-success" target="_blank">GitHub repo</a>
+                          <a href="https://jcomp-03.github.io/wk6-weather-dashboard/" class="btn btn-success" target="_blank">Deployed app</a>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="col-5 class-card-body ms-auto mb-3">
+                    <div class="card">
+                        <img src="./assets/images/work-day-scheduler.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Work Day Scheduler</h5>
+                          <p class="card-text">Need to plan out your day to see where all your meetings land? This is the app!</p>
+                          <a href="https://github.com/jcomp-03/wk5-work-day-scheduler" class="btn btn-success" target="_blank">GitHub repo</a>
+                          <a href="https://jcomp-03.github.io/wk5-work-day-scheduler/" class="btn btn-success" target="_blank">Deployed app</a>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="col-5 class-card-body">
+                    <div class="card">
+                        <img src="./assets/images/code-quiz-still.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Coding Quiz</h5> <!-- https://gfycat.com/costlypeacefulbutterfly -->
+                          <p class="card-text">Want to test your coding knowledge? Take this short, interactive quiz and save your results.</p>
+                          <a href="https://github.com/jcomp-03/wk4-code-quiz" class="btn btn-success" target="_blank">GitHub repo</a>
+                          <a href="https://jcomp-03.github.io/wk4-code-quiz/" class="btn btn-success" target="_blank">Deployed app</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-5 class-card-body ms-auto">
+                    <div class="card">
+                        <img src="./assets/images/password-generator-still.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Random Password Generator</h5> <!-- https://gfycat.com/skinnyincompatiblecoqui -->
+                          <p class="card-text">Set the criteria for characters and get your random password in a blink of an eye.</p>
+                          <a href="https://github.com/jcomp-03/wk3-password-generator" class="btn btn-success" target="_blank">GitHub repo</a>
+                          <a href="https://jcomp-03.github.io/wk3-password-generator/" class="btn btn-success" target="_blank">Deployed app</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row border-me" style="height:250px;">
+                Placeholder text until otherwise
+            </div>
 
             
-        </div> <!-- Container end -->
+        </div> <!-- Main container end -->
 
         <!-- Section my work -->
         <section class="display-flex-row-nowrap" id="id-my-work">
