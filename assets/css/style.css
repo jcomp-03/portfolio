@@ -60,7 +60,6 @@ header div span {
 }
 
 .class-ul {
-    border: solid 2px pink;
     justify-content:space-evenly;
 }
 
@@ -91,20 +90,22 @@ header div span {
 /* ABOUT ME STYLING ENDS */
 
 /* WORK PORTFOLIO STYLING */
-.class-banner-card-body {
+.class-banner-card {
     padding: 1.5em 1.5em 1.5em 10em;
     background-color: var(--textColor2);
-    border: solid 5px var(--textColor2);
+    border-radius: 20px;
+}
+
+.class-card {
+    padding: 1.5em;
+    background-color: var(--textColor2);
     border-radius: 20px;
 }
 
 .class-card-body {
-    padding: 1.5em;
-    background-color: var(--textColor2);
-    border: solid 5px var(--textColor2);
-    border-radius: 20px;
+    margin: 0;
+    background-color: var(--textColor1);
 }
-
 /* WORK PORTFOLIO STYLING ENDS*/
 
 
@@ -236,6 +237,11 @@ header div span {
 .class-website-text {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.5em;
+}
+
+.class-bottom-border {
+    border-bottom: double 10px var(--colorMain5);
+    margin-bottom: 4em;
 }
 
 .display-flex-row-nowrap {
