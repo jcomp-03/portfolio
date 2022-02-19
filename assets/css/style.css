@@ -12,8 +12,8 @@
     --colorMain4: rgba(60,60,60,1);
     --colorMain5: rgb(0,0,0);
     --stdFontSize: 12px;
-    --stdBorder1: solid 2px var(--textColor1);
-    --stdBorder2: solid 5px var(--textColor2);
+    --stdBorder1: solid 4px var(--textColor1);
+    --stdBorder2: solid 4px var(--textColor2);
 }
 
 /* ZERO OUT ANY USER-AGENT-ASSIGNED MARGINS, PADDINGS, ETC. */ 
@@ -89,6 +89,7 @@ header div span {
 }
 /* ABOUT ME STYLING ENDS */
 
+
 /* WORK PORTFOLIO STYLING */
 .class-banner-card {
     padding: 1.5em 1.5em 1.5em 10em;
@@ -100,130 +101,26 @@ header div span {
     padding: 1.5em;
     background-color: var(--textColor2);
     border-radius: 20px;
+    width: 48%;
 }
 
 .class-card-body {
     margin: 0;
     background-color: var(--textColor1);
+    border-radius: 0 0 20px 20px;
 }
-/* WORK PORTFOLIO STYLING ENDS*/
+/* WORK PORTFOLIO STYLING ENDS */
 
 
-/* Style the div wrapper as required */
-.wrap-section-content {
-    font-size: 1.5vw;
-    flex: 100%;
-}
-
-.wrap-app-flagship {
-    height: 600px;
-    margin-bottom: 50px;
-    border: var(--stdBorder2);
-    background-color: darkseagreen;
-}
-
-.wrap-app-flagship:hover { /* Pseudo-class :hover for flagship app */
-    background-color: rgba(143,188,143,0.75);
-}
-
-#id-app-flagship-title {
-    top: 475px;
-}
-
-#id-app-flagship-title h3 {
-    background-color: var(--textColor1);
-    width: 250px;
-    font-size: 2vw;
-}
-
-#id-app-flagship-title p {
-    background-color: var(--textColor1);
-    width: 250px;
-    font-size: 1vw;
-}
-
-.wrap-app-miscellaneous {
-    justify-content: space-between;
-}
-
-.app-miscellaneous { /* The miscellaneous apps are flex items because their parent container is a flex box */
-    height: 250px;
-    width: 650px;
-    border: var(--stdBorder2);
-    margin: 25px 0;
-}
-
-.app-miscellaneous-title {
-    top: 120px;
-}
-
-.app-miscellaneous h3 {
-    width: 250px;
-    font-size: 2vw;
-}
-
-.app-miscellaneous a {
-    text-decoration: none;
-    color: var(--textColor2);
-}
-
-#id-app-2 {
-    background-color: tomato;
-}
-/* I tried using :hover on my class .app-miscellaneous but the styling would not happen. I was forced to use each app's individual id in order to obtain the desired hover effect. Interesting observation to note. By setting the element's background color via id (as I originally did below), it prohibits altering it later via a ?hover pseudo-element?  */
-#id-app-2:hover {
-    background-color: rgba(255,91,71,0.75); /* the rgb sequence is the equivalent of tomato above */
-}
-
-#id-app-3 {
-    background-color: orange;
-}
-#id-app-3:hover {
-    background-color: rgba(255,165,0,0.75);
-}
-#id-app-4 {  
-    background-color: dodgerblue;
-}
-#id-app-4:hover {  
-    background-color: rgba(30,144,255,0.75);
-}
-#id-app-5 {
-    background-color: mediumseagreen;
-}
-#id-app-5:hover {
-    background-color: rgba(60,179,113,0.75);
-}
-/* SECTION work STYLING ENDS */
-
-
-/* SECTION contact me STYLING BEGINS */
-#id-contact-me .wrap-section-content nav ul {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-}
-#id-contact-me .wrap-section-content nav ul li {
-    margin: 20px;
-    padding: 10px;
-}
-#id-contact-me .wrap-section-content nav ul li a {
-    text-decoration: none;
-    color: var(--textColor2);
-    font-weight: bolder;
-    font-size: 1.2vw;
-}
-/* SECTION contact me STYLING ENDS */
-
-/* PSEUD0-CLASSES & PSEUDO-ELEMENTS */
+/***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
 .class-ul-li:hover {
     transform: scale(1.3, 1.3);
 }
+
 .class-ul-li-a:hover {
     color: var(--textColor1);
 }
+
 
 /***** UTILITIES *****/
 .class-section-title {
@@ -240,29 +137,16 @@ header div span {
 }
 
 .class-bottom-border {
+    padding-bottom: 4em;
     border-bottom: double 10px var(--colorMain5);
     margin-bottom: 4em;
 }
 
-.display-flex-row-nowrap {
-    display: flex;
-    flex-flow: row nowrap; 
-}
-.display-flex-row-wrap {
-    display: flex;
-    flex-flow: row wrap; 
-}
-.app-title-styling {
-    padding-top: 10px;
-    padding-left: 20px;
-    height: 100px;
-    background-color: var(--textColor1);
-    display: inline-block;
-    position: relative;
-}
+
 .card-app-height {
     min-height: 25em;
 }
+
 .border-me {
     border: var(--stdBorder1);
 }
