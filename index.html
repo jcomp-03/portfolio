@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Patua+One&family=Source+Code+Pro&display=swap" rel="stylesheet">
-
+        <script src="https://kit.fontawesome.com/331def02d9.js" crossorigin="anonymous"></script>
 
         <title>jcomp-03's webpage</title>
     </head>
@@ -55,8 +55,8 @@
             </div>
             
             <ul class="nav class-ul">
-                <li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-title-about-me">about me</a></li>
-                <li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-title-my-work">my work</a></li>
+                <i class="fa-solid fa-envelope"></i><li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-title-about-me"><i class="fa-solid fa-envelope"></i>about me</a></li>
+                <i class="fa-solid fa-at"></i><li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-title-my-work">my work</a></li>
                 <li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-title-contact-me">contact me</a></li>
                 <li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-title-my-resume">my resume</a></li>
                 <li class="nav-item class-ul-li"><a class="nav-link class-ul-li-a" href="#id-title-miscellaneous">miscellaneous</a></li>
@@ -64,8 +64,9 @@
         </header>
 
         <!-- Main container -->
-        <div class="container" id="id-container">
+        <div class="container border-me-pink" id="id-container">
 
+            <!-- about me -->
             <div class="row justify-content-center mx-auto class-section-title" id="id-title-about-me">some words about me</div>
             <div class="row class-bottom-border" id="id-about-me">
                 <div class="col-8 class-website-text" id="id-about-me-text">
@@ -89,7 +90,7 @@
                 </div>
             </div>
 
-
+            <!-- work portfolio -->
             <div class="row justify-content-center mx-auto class-section-title" id="id-title-my-work">work portfolio</div>
             <div class="row">
                 <p  class="class-website-text">
@@ -100,7 +101,8 @@
                 <!-- Banner application -->
                 <div class="col class-banner-card mb-5">
                     <div class="card border-0">
-                        <img src="./assets/videos/PlushBriskAngelwingmussel.mp4" class="card-img-top" alt="Placeholder text">
+                        <video src="./assets/videos/Project-1-Sample-Cut.mp4" autoplay loop muted controls controlslist="nodownload nofullscreen">Short demonstration of movie search app</video>
+                        <!-- <img src="./assets/videos/Project-1-short" class="card-img-top" alt="Placeholder text"> -->
                         <div class="card-body">
                             <h5 class="card-title">IMBD</h5>
                             <p class="card-text">A movie search platform; distinctly original.</p> <!-- https://gfycat.com/plushbriskangelwingmussel -->
@@ -110,10 +112,8 @@
                     </div>
                 </div>
             </div>  
-            
-
             <!-- Other applications -->
-            <div class="row row-cols-1 row-cols-md-2 g-3 justify-content-evenly class-bottom-border border-me-yellow">
+            <div class="row row-cols-1 row-cols-md-2 gy-5 justify-content-between class-bottom-border">
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
                         <img src="..." class="card-img-top" alt="...">
@@ -140,9 +140,9 @@
                 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <img src="./assets/images/code-quiz-still.jpg" class="card-img-top" alt="...">
+                        <video src="./assets/videos/Code-Quiz.mp4" autoplay loop muted controls controlslist="nodownload nofullscreen">Short demonstration of code quiz app</video>
                         <div class="card-body class-card-body">
-                        <h5 class="card-title">Coding Quiz</h5> <!-- https://gfycat.com/costlypeacefulbutterfly -->
+                        <h5 class="card-title">Coding Quiz</h5>
                         <p class="card-text">Want to test your coding knowledge? Take this short, interactive quiz and save your results.</p>
                         <a href="https://github.com/jcomp-03/wk4-code-quiz" class="btn btn-success" target="_blank">GitHub repo</a>
                         <a href="https://jcomp-03.github.io/wk4-code-quiz/" class="btn btn-success" target="_blank">Deployed app</a>
@@ -152,7 +152,7 @@
 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <img src="./assets/images/password-generator-still.JPG" class="card-img-top" alt="...">
+                        <video src="./assets/videos/Password-Generator.mp4" autoplay loop muted controls controlslist="nodownload nofullscreen">Short demonstration of random password generator app</video>
                         <div class="card-body class-card-body">
                         <h5 class="card-title">Random Password Generator</h5> <!-- https://gfycat.com/skinnyincompatiblecoqui -->
                         <p class="card-text">Set the criteria for characters and get your random password in a blink of an eye.</p>
@@ -187,7 +187,7 @@
                 </div>
             </div>
                    
-            
+            <!-- contact me -->
             <div class="row justify-content-center mx-auto class-section-title" id="id-title-contact-me">how to reach me</div>
             <div class="row class-bottom-border">
                 <p class="class-website-text">
