@@ -64,14 +64,31 @@ header div span {
 }
 
 .class-ul-li {
-    margin: 0 1em;
+    /* border: solid 2px black; */
+    margin: 0 1.3em;
 }
 
-.class-ul-li-a {
+.class-ul-li-div {
+    display: flex;
+    align-items: center;
+}
+
+.class-ul-li-div-a {
+    padding: 0;
+    /* border: solid 2px yellow; */
     font-family: 'Concert One', cursive;
     color: var(--textColor2);
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
+
+.class-ul-li-div-i {
+    padding-left: 0.2em;
+    padding-top: 10px;
+    font-size: 2.2em;
+    /* border: solid 2px pink; */
+    color: black;
+}
+
 /* HEADER STYLING ENDS */
 
 
@@ -113,11 +130,11 @@ header div span {
 
 
 /***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
-.class-ul-li:hover {
+.class-ul-li-div:hover {
     transform: scale(1.3, 1.3);
 }
 
-.class-ul-li-a:hover {
+.class-ul-li-div-a:hover {
     color: var(--textColor1);
 }
 
