@@ -108,6 +108,15 @@ header div span {
 
 
 /* WORK PORTFOLIO STYLING */
+
+.class-rome {
+    text-align: center;
+    opacity: 0;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .class-banner-card {
     padding: 1.5em 1.5em 1.5em 10em;
     background-color: var(--textColor2);
@@ -128,6 +137,28 @@ header div span {
 }
 /* WORK PORTFOLIO STYLING ENDS */
 
+/* CONTACT ME STYLING */
+#id-div-logos {
+    border: solid 2px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#id-logo-linkedin {
+    width: 125px;
+    height: auto;
+}
+
+#id-logo-github {
+    width: 125px;
+    height: auto;
+}
+
+#id-div-logos i {
+    font-size: 10em;
+}
 
 /***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
 .class-ul-li-div:hover {
@@ -136,6 +167,10 @@ header div span {
 
 .class-ul-li-div-a:hover {
     color: var(--textColor1);
+}
+
+.class-rome:hover {
+    opacity: 1;
 }
 
 
@@ -159,7 +194,6 @@ header div span {
     margin-bottom: 4em;
 }
 
-
 .card-app-height {
     min-height: 25em;
 }
@@ -176,68 +210,28 @@ header div span {
 .border-me-pink {
     border: solid 4px pink;
 }
-
-
-
 .border-me-thick {
     border: var(--stdBorder2);
 }
-/***** MEDIA QUERIES *****/
 
+
+/***** MEDIA QUERIES *****/
 /***** MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER *****/
 @media screen and (max-width: 980px) {
-  header {
-      justify-content: center;
-    }
-  header h1 {
-      width: 100%;
-      text-align: center;
-    }
-  header nav {
-      border: solid 2px white;
-      width: 100%;
-      justify-content: right;
-    } 
-  header nav ul li {
-      justify-content: center;
-      text-align: center;
-    }
-    .section-title {
-        font-size: 5vw;
-    }
-    .wrap-section-content {
-        font-size: 2.3vw;
-    }
+
 }
 
 /***** MEDIA QUERY FOR TABLETS AND SMALLER *****/
 @media screen and (max-width: 768px) {
-    header h1 {
-      /* this will be applied on any screen between 768px and 575px */
-      font-size: 3.8vw;
-    }
-    .banner {
-        height: 150px;
-    }
-    .wrap-section-title {
-        display: block;
-        width: 100%;
-    }
-    .section-title {
-        font-size: 5vw;
-    }
-    .wrap-section-content {
-        display: block;
-        font-size: 2.3vw;
-        /* flex: 100%; */
-    }
+    
 }
 
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+/***** MEDIA QUERY FOR MOBILE PHONES AND SMALLER *****/
 @media screen and (max-width: 575px) {
 
 
 }
+
 
 @keyframes changeOpacity {
     0% {opacity: 0;}
