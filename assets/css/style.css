@@ -139,25 +139,36 @@ header div span {
 
 /* CONTACT ME STYLING */
 #id-div-logos {
-    border: solid 2px black;
+    /* border: solid 2px black; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
 }
 
 #id-logo-linkedin {
+    /* border: solid 2px pink; */
     width: 125px;
     height: auto;
+    margin-bottom: 0.2em;
 }
 
 #id-logo-github {
+    /* border: solid 2px pink; */
     width: 125px;
     height: auto;
+    margin-bottom: 0.2em;
 }
 
-#id-div-logos i {
-    font-size: 10em;
+#id-div-logos a {
+    /* border: solid 2px pink; */
+    color: var(--textColor2);
+    text-decoration: none;
+    font-size: 12em;
+}
+
+#id-div-logos a i {
+    /* border: solid 2px pink; */
 }
 
 /***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
