@@ -7,4 +7,4 @@ A template was provided so that I could use it in designing the portfolio page f
 This README file will be amended when the challenge is resubmitted for grading, as the mobile response (i.e. media queries) features are not fully built out yet.
 
 
-https://jcomp-03.github.io/wk2-website-portfolio/
+https://jcomp-03.github.io/website-portfolio/
