@@ -37,78 +37,60 @@ body {
 
 /* HEADER STYLING BEGINS */
 header {
-    border: solid 2px yellow;
     padding: 1em 0;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
     background-image: linear-gradient(var(--colorMain5), var(--colorMain1));
-    height: 15em;
+    height: auto;
 }
-
-header div {
-    /* border: solid 2px pink; */
-}
-
 header div span {
     font-family: 'Patua One', cursive;
-    color: var(--textColor1);
-    font-size: 5.0em;
+    color: var(--textColor2);
+    font-size: 2.4em;
     white-space: pre;
     opacity: 0;
 }
-
 .class-ul {
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
-
 .class-ul-li {
-    /* border: solid 2px black; */
-    margin: 0 1.3em;
+    font-size: 1.2em;
+    margin: 0 0.5em;
 }
-
 .class-ul-li-div {
     display: flex;
     align-items: center;
 }
-
 .class-ul-li-div-a {
     padding: 0;
-    /* border: solid 2px yellow; */
     font-family: 'Concert One', cursive;
-    color: var(--textColor2);
+    color: var(--textColor1);
     font-size: 2.2em;
 }
-
-/* .class-ul-li-div-i {
-    padding-left: 0.4em;
+.class-ul-li-div-i {
+    padding-left: 0.2em;
     padding-top: 10px;
-    font-size: 2.2em;
-    border: solid 2px pink;
+    font-size: 1.6em;
     color: black;
-} */
-
+}
 /* HEADER STYLING ENDS */
 
 
 /* ABOUT ME STYLING */
-/* #id-about-me {
+#id-about-me {
     border-bottom: double 10px var(--colorMain5);
-    margin-bottom: 4em;
-} */
-
-/* #id-about-me-profile-shot {
-    margin-bottom: 4em;
+}
+#id-about-me-profile-shot {
     border-radius: 300px;
-    max-height: 500px;
+    max-height: 400px;
     display: block;
-} */
+}
 /* ABOUT ME STYLING ENDS */
 
 
 /* WORK PORTFOLIO STYLING */
-
 .class-rome {
     text-align: center;
     opacity: 0;
@@ -117,25 +99,31 @@ header div span {
     margin-right: auto;
 }
 
-/* .class-banner-card {
+.class-banner-card {
     padding: 1.5em 1.5em 1.5em 10em;
     background-color: var(--textColor2);
     border-radius: 20px;
     margin: auto 0;
-} */
-
-/* .class-card {
+}
+.class-card {
     padding: 1.5em;
     background-color: var(--textColor2);
     border-radius: 20px;
-    width: 48%;
-} */
+}
 
-/* .class-card-body {
+.class-card-body {
     margin: 0;
     background-color: var(--textColor1);
-} */
-
+}
+.card-title {
+    font-weight: bolder;
+    text-align: center;
+}
+.card-text {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: var(--colorMain5);
+}
 /* WORK PORTFOLIO STYLING ENDS */
 
 /* CONTACT ME STYLING */
@@ -146,172 +134,70 @@ header div span {
     justify-content: space-around;
     align-items: center;
 }
-#id-logo-linkedin {
-    /* border: solid 2px pink; */
-    width: 125px;
-    height: auto;
-    margin-bottom: 0.2em;
-}
-#id-logo-github {
-    /* border: solid 2px pink; */
-    width: 125px;
-    height: auto;
-    margin-bottom: 0.2em;
-}
 #id-div-logos a {
-    /* border: solid 2px pink; */
+    /* border: solid 2px black; */
     color: var(--textColor2);
     text-decoration: none;
     font-size: 12em;
 }
+#id-logo-linkedin {
+    /* border: solid 2px black; */
+    width: 125px;
+    height: auto;
+    margin-bottom: 0.2em;
+}
 #id-div-logos a i {
-    border: solid 2px pink;
+    /* border: solid 2px black; */
+    margin: 0 0.3em;
+}
+#id-logo-github {
+    /* border: solid 2px black; */
+    width: 125px;
+    height: auto;
+    margin-bottom: 0.2em;
 }
 
 /***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
 .class-ul-li-div:hover {
-    transform: scale(1.3, 1.3);
+    transform: scale(1.1, 1.1);
 }
 .class-ul-li-div-a:hover {
-    color: var(--textColor1);
+    color: var(--textColor2);
 }
 .class-rome:hover {
     opacity: 1;
 }
 
 /***** UTILITIES *****/
-/* .class-section-title {
+.class-section-title {
     font-family: 'Patua One', cursive;
-    font-size: 4.0em;
+    font-size: 3.0em;
     border-bottom: solid 5px var(--textColor1);
-    max-width: 50%;
-    margin-bottom: 1em;
-} */
-
-/* .class-website-text {
+    margin-bottom: 0.3em;
+    width: 75%;
+}
+.class-website-text {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.5em;
-} */
-
-/* .class-bottom-border {
-    padding-bottom: 4em;
+    text-align: justify;
+    padding: 0 0.5em;
+}
+.class-bottom-border {
+    padding-bottom: 2em;
     border-bottom: double 10px var(--colorMain5);
-    margin-bottom: 4em;
-} */
-
+    margin-bottom: 1em;
+}
 .card-app-height {
     min-height: 25em;
 }
 
-.border-me {
-    border: var(--stdBorder1);
-}
-.border-me-yellow {
-    border: solid 4px yellow;
-}
-.border-me-green {
-    border: solid 4px green;
-}
-.border-me-pink {
-    border: solid 4px pink;
-}
-.border-me-thick {
-    border: var(--stdBorder2);
-}
-
-/***** MEDIA QUERY FOR MOBILE PHONES AND LARGER *****/
-@media screen and (min-width: 576px) {
-    header {
-        height: auto;
-    }
-    header div span {
-        font-size: 2.4em;
-        color: var(--textColor2);
-    }
-    .class-ul {
-        justify-content: space-evenly;
-    }
-    .class-ul-li {
-        font-size: 1.2em;
-        margin: 0 0.5em;
-    }
-    .class-ul-li-div:hover {
-        transform: scale(1.1, 1.1);
-    }
-    .class-ul-li-div-a {
-        color: var(--textColor1)
-    }
-    .class-ul-li-div-a:hover {
-        color: var(--textColor2);
-    }
-    .class-ul-li-div-i {
-        padding-left: 0.2em;
-        padding-top: 10px;
-        font-size: 1.6em;
-        color: black;
-    }
-    .class-section-title {
-        font-family: 'Patua One', cursive;
-        font-size: 3.0em;
-        border-bottom: solid 5px var(--textColor1);
-        margin-bottom: 0.3em;
-        width: 75%;
-    }
-    #id-about-me {
-        border-bottom: double 10px var(--colorMain5);
-        /* margin-bottom: 2em; */
-    }
-    #id-about-me-profile-shot {
-        border-radius: 300px;
-        max-height: 400px;
-        display: block;
-    }
-    .class-website-text {
-        font-family: 'Source Code Pro', monospace;
-        font-size: 1.5em;
-        text-align: justify;
-        padding: 0 0.5em;
-    }
-    .class-bottom-border {
-        padding-bottom: 2em;
-        border-bottom: double 10px var(--colorMain5);
-        margin-bottom: 1em;
-    }
-    .class-banner-card {
-        padding: 1.5em;
-        background-color: var(--textColor2);
-        border-radius: 20px;
-        margin: auto 0;
-    }
-    .class-card {
-        padding: 1.5em;
-        background-color: var(--textColor2);
-        border-radius: 20px;
-    }
-    .class-card-body {
-        margin: 0;
-        background-color: var(--textColor1);
-    }
-    .card-title {
-        font-weight: bolder;
-        text-align: center;
-    }
-    .card-text {
-        font-size: 1.2em;
-        font-weight: bolder;
-        color: var(--colorMain5);
-    }
-    
-}
-
-
-/***** MEDIA QUERY FOR TABLETS AND LARGER *****/
+/***** MEDIA QUERY FOR TABLET AND LARGER *****/
 @media screen and (min-width: 768px) {
     header div span {
         font-size: 3em;
     }
     .class-ul-li-div:hover {
-        transform: scale(1.1, 1.1);
+        transform: scale(1.2, 1.2);
     }
     .class-section-title {
         margin-bottom: 1em;
@@ -323,16 +209,42 @@ header div span {
     .class-card {
         width: 48%;
     }
+    #id-div-logos a {
+        font-size: 16em;
+    }
+    #id-logo-linkedin {
+        width: 175px;
+    }
+    #id-logo-github {
+        width: 175px;
+    }
 
 }
 
-/***** MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER *****/
+/***** MEDIA QUERY FOR DESKTOP SCREEN AND LARGER *****/
 @media screen and (min-width: 992px) {
+    header div span {
+        color: var(--textColor1);
+        font-size: 5em;
+    }
+    .class-ul-li-div-a {
+        color: var(--textColor2);
+        font-size: 2.2em;
+    }
+    .class-ul-li {
+        margin: 0 1.5em;
+    }
     .class-head-profile {
         margin: auto 0;
     }
-}
+    .card-title {
+        font-size: 2.5em;
+    }
+    .card-text {
+        font-size: 1.5em;
 
+    }
+}
 
 @keyframes changeOpacity {
     0% {opacity: 0;}
