@@ -180,7 +180,7 @@ header div span {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.5em;
     text-align: justify;
-    padding: 0 0.5em;
+    padding: 0 1em;
 }
 .class-bottom-border {
     padding-bottom: 2em;
@@ -192,6 +192,28 @@ header div span {
 }
 
 /***** MEDIA QUERY FOR TABLET AND LARGER *****/
+@media screen and (max-width: 575px) {
+    header div span {
+        font-size: 2.2em;
+    }
+    .class-ul-li {
+        font-size: 1.0em;
+        width: 100%;
+    }
+    .class-ul-li-div {
+        justify-content: center;
+    }
+    .class-ul-li-div-a {
+        color: yellow;
+    }
+    .class-ul-li-div-i {
+        padding-left: 0.2em;
+        padding-top: 10px;
+        font-size: 1.6em;
+        color: black;
+    }
+}
+
 @media screen and (min-width: 768px) {
     header div span {
         font-size: 3em;
