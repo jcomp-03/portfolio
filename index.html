@@ -6,20 +6,20 @@
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="./assets/css/style.css" rel="stylesheet">
-        <link href="./assets/images/favicon-16x16.png" rel="icon" type="">
+        <!-- <link href="./assets/images/favicon-16x16.png" rel="icon" type=""> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Patua+One&family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Concert+One&family=Patua+One&family=Source+Code+Pro&display=swap">
         <!-- <script src="https://kit.fontawesome.com/331def02d9.js" crossorigin="anonymous"></script> -->
         <!-- Bootstrap icon fonts stylesheet for the moment, until FontAwesome problem is resolved? -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         <title>jcomp-03's webpage</title>
     </head>
 
     <!-- <body> follows the <head> -->
     <body>
         <header>
-            <div> <!-- Might want to change the <span> to an actual <h1> element... -->
+            <div id="id-header-animation"> <!-- Might want to change the <span> to an actual <h1> element... -->
                 <span class="intro-text-1">&lt;</span>
                 <span class="intro-text-2">h</span>
                 <span class="intro-text-3">1</span>
@@ -91,12 +91,15 @@
         </header>
 
         <!-- Main container -->
-        <div class="container border-me-pink" id="id-container">
+        <div class="container" id="id-container">
 
             <!-- about me -->
-            <div class="row justify-content-center mx-auto class-section-title" id="id-title-about-me">some words about me</div>
+            <div class="row justify-content-center align-items-lg-center mx-auto class-section-title" id="id-title-about-me">some words about me</div>
             <div class="row class-bottom-border" id="id-about-me">
-                <div class="col-8 class-website-text" id="id-about-me-text">
+                <div class="col-12 col-lg-4 order-lg-last class-head-profile">
+                    <img src="./assets/images/christmas-spirit-7-5-aspect-ratio.jpg" class="img-fluid mx-auto"  id="id-about-me-profile-shot" alt="A head profile of James wearing a festive Christmas hat.">
+                </div>
+                <div class="col class-website-text" id="id-about-me-text">
                     <br>
                     Thank you for visiting my webpage.
                     <br><br>
@@ -109,12 +112,10 @@
                     <br><br>
                     I embarked on this professional pivot for different reasons, but principally due to what I see
                     as <em>software eating the world</em>, to borrow the words of Marc Andreessen. The knowledge I have
-                    earned and technologies I have learned over the last 6 months have made me more optimistic about
+                    gained and technologies I have learned over the last 6 months have made me more optimistic about
                     the future and my place in it. If you care for my resume, you can download it <em>here</em>.
                 </div>
-                <div class="col class-head-profile">
-                    <img src="./assets/images/christmas-spirit-7-5-aspect-ratio.jpg" class="img-fluid mx-auto"  id="id-about-me-profile-shot" alt="A head profile of James wearing a festive Christmas hat.">
-                </div>
+
             </div>
 
             <!-- work portfolio -->
@@ -142,10 +143,10 @@
                     <div class="card border-0 rounded-2">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body class-card-body">
-                        <h5 class="card-title">Weather Dashboard</h5>
-                        <p class="card-text">Care to know the weather anywhere in the world? This app has you covered!</p>
-                        <a href="https://github.com/jcomp-03/wk6-weather-dashboard" class="btn btn-success" target="_blank">GitHub repo</a>
-                        <a href="https://jcomp-03.github.io/wk6-weather-dashboard/" class="btn btn-success" target="_blank">Deployed app</a>
+                            <h5 class="card-title">Weather Dashboard</h5>
+                            <p class="card-text">Care to know the weather anywhere in the world? This app has you covered!</p>
+                            <a href="https://github.com/jcomp-03/wk6-weather-dashboard" class="btn btn-success" target="_blank">GitHub repo</a>
+                            <a href="https://jcomp-03.github.io/wk6-weather-dashboard/" class="btn btn-success" target="_blank">Deployed app</a>
                         </div>
                     </div>
                 </div>
@@ -154,10 +155,10 @@
                     <div class="card border-0 rounded-2">
                         <img src="./assets/images/work-day-scheduler.JPG" class="card-img-top" alt="...">
                         <div class="card-body class-card-body">
-                        <h5 class="card-title">Work Day Scheduler</h5>
-                        <p class="card-text">Need to plan out your day to see where all your meetings land? This is the app!</p>
-                        <a href="https://github.com/jcomp-03/wk5-work-day-scheduler" class="btn btn-success" target="_blank">GitHub repo</a>
-                        <a href="https://jcomp-03.github.io/wk5-work-day-scheduler/" class="btn btn-success" target="_blank">Deployed app</a>
+                            <h5 class="card-title">Work Day Scheduler</h5>
+                            <p class="card-text">Need to plan out your day to see where all your meetings land? This is the app!</p>
+                            <a href="https://github.com/jcomp-03/wk5-work-day-scheduler" class="btn btn-success" target="_blank">GitHub repo</a>
+                            <a href="https://jcomp-03.github.io/wk5-work-day-scheduler/" class="btn btn-success" target="_blank">Deployed app</a>
                         </div>
                     </div>
                 </div>
@@ -166,10 +167,10 @@
                     <div class="card border-0 rounded-2">
                         <video src="./assets/videos/Code-Quiz.mp4" autoplay loop muted controls controlslist="nodownload nofullscreen">Short demonstration of code quiz app</video>
                         <div class="card-body class-card-body">
-                        <h5 class="card-title">Coding Quiz</h5>
-                        <p class="card-text">Want to test your coding knowledge? Take this short, interactive quiz and save your results.</p>
-                        <a href="https://github.com/jcomp-03/wk4-code-quiz" class="btn btn-success" target="_blank">GitHub repo</a>
-                        <a href="https://jcomp-03.github.io/wk4-code-quiz/" class="btn btn-success" target="_blank">Deployed app</a>
+                            <h5 class="card-title">Coding Quiz</h5>
+                            <p class="card-text">Want to test your coding knowledge? Take this short, interactive quiz and save your results.</p>
+                            <a href="https://github.com/jcomp-03/wk4-code-quiz" class="btn btn-success" target="_blank">GitHub repo</a>
+                            <a href="https://jcomp-03.github.io/wk4-code-quiz/" class="btn btn-success" target="_blank">Deployed app</a>
                         </div>
                     </div>
                 </div>
@@ -178,10 +179,10 @@
                     <div class="card border-0 rounded-2">
                         <video src="./assets/videos/Password-Generator.mp4" autoplay loop muted controls controlslist="nodownload nofullscreen">Short demonstration of random password generator app</video>
                         <div class="card-body class-card-body">
-                        <h5 class="card-title">Random Password Generator</h5>
-                        <p class="card-text">Set the criteria for characters and get your random password in a blink of an eye.</p>
-                        <a href="https://github.com/jcomp-03/wk3-password-generator" class="btn btn-success" target="_blank">GitHub repo</a>
-                        <a href="https://jcomp-03.github.io/wk3-password-generator/" class="btn btn-success" target="_blank">Deployed app</a>
+                            <h5 class="card-title">Random Password Generator</h5>
+                            <p class="card-text">Set the criteria for characters and get your random password in a blink of an eye.</p>
+                            <a href="https://github.com/jcomp-03/wk3-password-generator" class="btn btn-success" target="_blank">GitHub repo</a>
+                            <a href="https://jcomp-03.github.io/wk3-password-generator/" class="btn btn-success" target="_blank">Deployed app</a>
                         </div>
                     </div>
                 </div>
@@ -190,10 +191,10 @@
                     <div class="card border-0 rounded-2">
                         <img src="./assets/images/password-generator-still.JPG" class="card-img-top" alt="...">
                         <div class="card-body class-card-body">
-                        <h5 class="card-title">Random Password Generator</h5> <!-- https://gfycat.com/skinnyincompatiblecoqui -->
-                        <p class="card-text">Set the criteria for characters and get your random password in a blink of an eye.</p>
-                        <a href="https://github.com/jcomp-03/wk3-password-generator" class="btn btn-success" target="_blank">GitHub repo</a>
-                        <a href="https://jcomp-03.github.io/wk3-password-generator/" class="btn btn-success" target="_blank">Deployed app</a>
+                            <h5 class="card-title">Random Password Generator</h5> <!-- https://gfycat.com/skinnyincompatiblecoqui -->
+                            <p class="card-text">Set the criteria for characters and get your random password in a blink of an eye.</p>
+                            <a href="https://github.com/jcomp-03/wk3-password-generator" class="btn btn-success" target="_blank">GitHub repo</a>
+                            <a href="https://jcomp-03.github.io/wk3-password-generator/" class="btn btn-success" target="_blank">Deployed app</a>
                         </div>
                     </div>
                 </div>
@@ -202,13 +203,27 @@
                     <div class="card border-0 rounded-2"> 
                         <img src="./assets/images/run-buddy-still.JPG" class="card-img-top" alt="...">
                         <div class="card-body class-card-body">
-                        <h5 class="card-title">Run Buddy, Inc</h5> <!-- https://gfycat.com/skinnyincompatiblecoqui -->
-                        <p class="card-text">A built-to-specification fitness website for those looking to get in shape. Fully mobile-responsive.</p>
-                        <a href="https://github.com/jcomp-03/run-buddy" class="btn btn-success" target="_blank">GitHub repo</a>
-                        <a href="https://jcomp-03.github.io/run-buddy/" class="btn btn-success" target="_blank">Deployed app</a>
+                            <h5 class="card-title">Run Buddy, Inc</h5> <!-- https://gfycat.com/skinnyincompatiblecoqui -->
+                            <p class="card-text">A built-to-specification fitness website for those looking to get in shape. Fully mobile-responsive.</p>
+                            <a href="https://github.com/jcomp-03/run-buddy" class="btn btn-success" target="_blank">GitHub repo</a>
+                            <a href="https://jcomp-03.github.io/run-buddy/" class="btn btn-success" target="_blank">Deployed app</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="col class-card">
+                    <div class="card border-0 rounded-2"> 
+                        <img src="./assets/images/project-2-still.JPG" class="card-img-top" alt="...">
+                        <div class="card-body class-card-body">
+                            <h5 class="card-title">Ouiii</h5> <!-- https://gfycat.com/skinnyincompatiblecoqui -->
+                            <p class="card-text">Like to party? We have you covered.</p>
+                            <a href="https://github.com/jcomp-03/OUiii" class="btn btn-success" target="_blank">GitHub repo</a>
+                            <a href="https://ouiii-party.herokuapp.com/" class="btn btn-success" target="_blank">Deployed app</a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
                    
             <!-- contact me -->

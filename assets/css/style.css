@@ -81,29 +81,29 @@ header div span {
     font-size: 2.2em;
 }
 
-.class-ul-li-div-i {
-    padding-left: 0.2em;
+/* .class-ul-li-div-i {
+    padding-left: 0.4em;
     padding-top: 10px;
     font-size: 2.2em;
-    /* border: solid 2px pink; */
+    border: solid 2px pink;
     color: black;
-}
+} */
 
 /* HEADER STYLING ENDS */
 
 
 /* ABOUT ME STYLING */
-#id-about-me {
+/* #id-about-me {
     border-bottom: double 10px var(--colorMain5);
     margin-bottom: 4em;
-}
+} */
 
-#id-about-me-profile-shot {
+/* #id-about-me-profile-shot {
     margin-bottom: 4em;
     border-radius: 300px;
     max-height: 500px;
     display: block;
-}
+} */
 /* ABOUT ME STYLING ENDS */
 
 
@@ -117,24 +117,25 @@ header div span {
     margin-right: auto;
 }
 
-.class-banner-card {
+/* .class-banner-card {
     padding: 1.5em 1.5em 1.5em 10em;
     background-color: var(--textColor2);
     border-radius: 20px;
     margin: auto 0;
-}
+} */
 
-.class-card {
+/* .class-card {
     padding: 1.5em;
     background-color: var(--textColor2);
     border-radius: 20px;
     width: 48%;
-}
+} */
 
-.class-card-body {
+/* .class-card-body {
     margin: 0;
     background-color: var(--textColor1);
-}
+} */
+
 /* WORK PORTFOLIO STYLING ENDS */
 
 /* CONTACT ME STYLING */
@@ -145,65 +146,58 @@ header div span {
     justify-content: space-around;
     align-items: center;
 }
-
 #id-logo-linkedin {
     /* border: solid 2px pink; */
     width: 125px;
     height: auto;
     margin-bottom: 0.2em;
 }
-
 #id-logo-github {
     /* border: solid 2px pink; */
     width: 125px;
     height: auto;
     margin-bottom: 0.2em;
 }
-
 #id-div-logos a {
     /* border: solid 2px pink; */
     color: var(--textColor2);
     text-decoration: none;
     font-size: 12em;
 }
-
 #id-div-logos a i {
-    /* border: solid 2px pink; */
+    border: solid 2px pink;
 }
 
 /***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
 .class-ul-li-div:hover {
     transform: scale(1.3, 1.3);
 }
-
 .class-ul-li-div-a:hover {
     color: var(--textColor1);
 }
-
 .class-rome:hover {
     opacity: 1;
 }
 
-
 /***** UTILITIES *****/
-.class-section-title {
+/* .class-section-title {
     font-family: 'Patua One', cursive;
     font-size: 4.0em;
     border-bottom: solid 5px var(--textColor1);
     max-width: 50%;
     margin-bottom: 1em;
-}
+} */
 
-.class-website-text {
+/* .class-website-text {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.5em;
-}
+} */
 
-.class-bottom-border {
+/* .class-bottom-border {
     padding-bottom: 4em;
     border-bottom: double 10px var(--colorMain5);
     margin-bottom: 4em;
-}
+} */
 
 .card-app-height {
     min-height: 25em;
@@ -225,22 +219,118 @@ header div span {
     border: var(--stdBorder2);
 }
 
-
-/***** MEDIA QUERIES *****/
-/***** MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER *****/
-@media screen and (max-width: 980px) {
-
-}
-
-/***** MEDIA QUERY FOR TABLETS AND SMALLER *****/
-@media screen and (max-width: 768px) {
+/***** MEDIA QUERY FOR MOBILE PHONES AND LARGER *****/
+@media screen and (min-width: 576px) {
+    header {
+        height: auto;
+    }
+    header div span {
+        font-size: 2.4em;
+        color: var(--textColor2);
+    }
+    .class-ul {
+        justify-content: space-evenly;
+    }
+    .class-ul-li {
+        font-size: 1.2em;
+        margin: 0 0.5em;
+    }
+    .class-ul-li-div:hover {
+        transform: scale(1.1, 1.1);
+    }
+    .class-ul-li-div-a {
+        color: var(--textColor1)
+    }
+    .class-ul-li-div-a:hover {
+        color: var(--textColor2);
+    }
+    .class-ul-li-div-i {
+        padding-left: 0.2em;
+        padding-top: 10px;
+        font-size: 1.6em;
+        color: black;
+    }
+    .class-section-title {
+        font-family: 'Patua One', cursive;
+        font-size: 3.0em;
+        border-bottom: solid 5px var(--textColor1);
+        margin-bottom: 0.3em;
+        width: 75%;
+    }
+    #id-about-me {
+        border-bottom: double 10px var(--colorMain5);
+        /* margin-bottom: 2em; */
+    }
+    #id-about-me-profile-shot {
+        border-radius: 300px;
+        max-height: 400px;
+        display: block;
+    }
+    .class-website-text {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1.5em;
+        text-align: justify;
+        padding: 0 0.5em;
+    }
+    .class-bottom-border {
+        padding-bottom: 2em;
+        border-bottom: double 10px var(--colorMain5);
+        margin-bottom: 1em;
+    }
+    .class-banner-card {
+        padding: 1.5em;
+        background-color: var(--textColor2);
+        border-radius: 20px;
+        margin: auto 0;
+    }
+    .class-card {
+        padding: 1.5em;
+        background-color: var(--textColor2);
+        border-radius: 20px;
+    }
+    .class-card-body {
+        margin: 0;
+        background-color: var(--textColor1);
+    }
+    .card-title {
+        font-weight: bolder;
+        text-align: center;
+    }
+    .card-text {
+        font-size: 1.2em;
+        font-weight: bolder;
+        color: var(--colorMain5);
+    }
     
 }
 
-/***** MEDIA QUERY FOR MOBILE PHONES AND SMALLER *****/
-@media screen and (max-width: 575px) {
 
+/***** MEDIA QUERY FOR TABLETS AND LARGER *****/
+@media screen and (min-width: 768px) {
+    header div span {
+        font-size: 3em;
+    }
+    .class-ul-li-div:hover {
+        transform: scale(1.1, 1.1);
+    }
+    .class-section-title {
+        margin-bottom: 1em;
+    }
+    .class-bottom-border {
+        padding-bottom: 4em;
+        margin-bottom: 4em;
+    }
+    .class-card {
+        width: 48%;
+    }
 
+}
+
+/***** MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER *****/
+@media screen and (min-width: 992px) {
+    .class-head-profile {
+        margin: auto 0;
+    }
 }
 
 
