@@ -191,10 +191,11 @@ header div span {
     min-height: 25em;
 }
 
-/***** MEDIA QUERY FOR TABLET AND LARGER *****/
+/***** MEDIA QUERY FOR MOBILE AND SMALLER *****/
 @media screen and (max-width: 575px) {
     header div span {
-        font-size: 2.2em;
+        color: var(--textColor1);
+        font-size: 2em;
     }
     .class-ul-li {
         font-size: 1.0em;
@@ -204,7 +205,7 @@ header div span {
         justify-content: center;
     }
     .class-ul-li-div-a {
-        color: yellow;
+        color: var(--textColor2);
     }
     .class-ul-li-div-i {
         padding-left: 0.2em;
@@ -212,8 +213,12 @@ header div span {
         font-size: 1.6em;
         color: black;
     }
+    .class-banner-card {
+        padding: 1.5em;
+    }
 }
 
+/***** MEDIA QUERY FOR TABLET AND LARGER *****/
 @media screen and (min-width: 768px) {
     header div span {
         font-size: 3em;
@@ -263,7 +268,7 @@ header div span {
         font-size: 2.5em;
     }
     .card-text {
-        font-size: 1.5em;
+        font-size: 1.2em;
 
     }
 }
