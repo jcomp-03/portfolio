@@ -79,10 +79,10 @@ header div span {
 
 
 /* ABOUT ME STYLING */
-#id-about-me {
+#about-me {
     border-bottom: double 10px var(--colorMain5);
 }
-#id-about-me-profile-shot {
+#about-me-profile {
     border-radius: 300px;
     max-height: 400px;
     display: block;

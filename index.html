@@ -19,7 +19,7 @@
     <!-- <body> follows the <head> -->
     <body>
         <header>
-            <div id="id-header-animation"> <!-- Might want to change the <span> to an actual <h1> element... -->
+            <div id="header-animation"> <!-- Might want to change the <span> to an actual <h1> element... -->
                 <span class="intro-text-1">&lt;</span>
                 <span class="intro-text-2">h</span>
                 <span class="intro-text-3">1</span>
@@ -91,17 +91,17 @@
         </header>
 
         <!-- Main container -->
-        <div class="container" id="id-container">
+        <div class="container">
 
             <!-- about me -->
-            <div class="row justify-content-center align-items-lg-center mx-auto class-section-title" id="id-title-about-me">some words about me</div>
-            <div class="row class-bottom-border" id="id-about-me">
+            <div class="row justify-content-center align-items-lg-center mx-auto class-section-title">some words about me</div>
+            <div class="row class-bottom-border" id="about-me">
                 <div class="col-12 col-lg-4 order-lg-last class-head-profile">
                     <span class="tt" data-bs-placement="right" title="Too casual? Click me for a more professional portrait">
-                        <img src="./assets/images/christmas-spirit-7-5-aspect-ratio.jpg" class="img-fluid mx-auto"  id="id-about-me-profile-shot" alt="A head profile of James wearing a festive Christmas hat.">
+                        <img src="./assets/images/christmas-spirit-7-5-aspect-ratio.jpg" class="img-fluid mx-auto"  id="about-me-profile" alt="A head profile of James wearing a festive Christmas hat.">
                     </span>                    
                 </div>
-                <div class="col class-website-text" id="id-about-me-text">
+                <div class="col class-website-text">
                     <br>
                     Thank you for visiting my webpage.
                     <br><br>
@@ -121,18 +121,17 @@
             </div>
 
             <!-- work portfolio -->
-            <div class="row justify-content-center mx-auto class-section-title" id="id-title-my-work">skills and portfolio</div>
+            <div class="row justify-content-center mx-auto class-section-title">skills and portfolio</div>
             <div class="row">
                     <p class="class-website-text">Here you can find my portfolio of projects which I've authored individually or in partnership with a team of people.</p><br>
                     <p class="class-website-text class-rome">Rome was not built in a day...</p>             
                 <!-- Banner application -->
                 <div class="col class-banner-card mb-5">
                     <div class="card border-0">
-                        <video src="./assets/videos/movie-search.mp4" autoplay loop muted controls controlslist="nodownload nofullscreen">Short demonstration of movie search app</video>
-                        <!-- <img src="./assets/videos/Project-1-short" class="card-img-top" alt="Placeholder text"> -->
+                        <video src="./assets/videos/movie-search.mp4" loop muted controls controlslist="nodownload">Movie search app</video>
                         <div class="card-body class-card-body">
                             <h5 class="card-title">IMBD</h5>
-                            <p class="card-text">A movie search platform; distinctly original.</p> <!-- https://gfycat.com/plushbriskangelwingmussel -->
+                            <p class="card-text">A movie search platform; distinctly original.</p>
                             <a href="https://github.com/jcomp-03/IMBD" class="btn btn-success" target="_blank">Go to the GitHub repo</a>
                             <a href="https://jcomp-03.github.io/IMBD/" class="btn btn-success" target="_blank">Visit the deployed app</a>
                         </div>
@@ -144,7 +143,7 @@
                 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2"> 
-                        <img src="./assets/images/project-2-still.JPG" class="card-img-top" alt="...">
+                        <img src="./assets/images/poster-ouiii.JPG" class="card-img-top" alt="...">
                         <div class="card-body class-card-body">
                             <h5 class="card-title">Ouiii</h5>
                             <p class="card-text">Like to party? We have you covered.</p>
@@ -156,7 +155,7 @@
 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <video src="./assets/videos/walkthrough-e-commerce.mp4" loop muted controls controlslist="nodownload">Employee tracker Node.js app</video>
+                        <video src="./assets/videos/e-commerce.mp4" loop muted controls controlslist="nodownload">Employee tracker Node.js app</video>
                         <div class="card-body class-card-body">
                             <h5 class="card-title">E-commerce backend</h5>
                             <p class="card-text">
@@ -175,7 +174,7 @@
 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <video src="./assets/videos/walkthrough-employee-tracker.mp4" loop muted controls controlslist="nodownload">Employee tracker Node.js app</video>
+                        <video src="./assets/videos/employee-tracker.mp4" loop muted controls controlslist="nodownload">Employee tracker Node.js app</video>
                         <div class="card-body class-card-body">
                             <h5 class="card-title">Employee Tracker</h5>
                             <p class="card-text">
@@ -194,7 +193,7 @@
 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <video src="./assets/videos/walkthrough-note-taker.mp4" loop muted controls controlslist="nodownload">Note taker Node.js app</video>
+                        <video src="./assets/videos/note-taker.mp4" loop muted controls controlslist="nodownload">Note taker Node.js app</video>
                         <div class="card-body class-card-body">
                             <h5 class="card-title">Note Taker</h5>
                             <p class="card-text">
@@ -211,7 +210,7 @@
 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <video src="./assets/videos/walkthrough-team-profile-generator.mp4" poster="./assets/images/pic-team-profile-generator.JPG" loop muted controls controlslist="nodownload">Team profile generator Node.js app</video>
+                        <video src="./assets/videos/team-profile-generator.mp4" poster="./assets/images/pic-team-profile-generator.JPG" loop muted controls controlslist="nodownload">Team profile generator Node.js app</video>
                         <div class="card-body class-card-body">
                             <h5 class="card-title">Team Profile Generator</h5>
                             <p class="card-text">
@@ -228,7 +227,7 @@
                 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <video src="./assets/videos/readme-generator.mp4" poster="./assets/images/pic-readme-generator.JPG" loop muted controls controlslist="nodownload">README generator node.js app</video>
+                        <video src="./assets/videos/readme-generator.mp4" poster="./assets/images/poster-readme-generator.JPG" loop muted controls controlslist="nodownload">README generator node.js app</video>
                         <div class="card-body class-card-body">
                             <h5 class="card-title">Professional README Generator</h5>
                             <p class="card-text">
@@ -246,10 +245,16 @@
                 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <img src="..." class="card-img-top" alt="...">
+                        <video src="./assets/videos/weather-dashboard.mp4" poster="./assets/images/poster-weather-dashboard.JPG" loop muted controls controlslist="nodownload">Weather dashboard app</video>
                         <div class="card-body class-card-body">
                             <h5 class="card-title">Weather Dashboard</h5>
-                            <p class="card-text">Care to know the weather anywhere in the world? This app has you covered!</p>
+                            <p class="card-text">
+                                ✔️ Uses Fetch API to make request for data from server-side APIs and integrates the data into the webpage<br>
+                                ✔️ Takes validated user input, makes dynamic HTTP requests to third-party server, and returns relevant weather data<br>
+                                ✔️ Parses JSON data to dynamically generate HTML<br>
+                                ✔️ Handles HTTP response codes by alerting user of possible bad search string<br>
+                                ✔️ Fully mobile-responsive such that app is vieweable from mobile through desktop screens
+                            </p>
                             <a href="https://github.com/jcomp-03/weather-dashboard" class="btn btn-success" target="_blank">GitHub repo</a>
                             <a href="https://jcomp-03.github.io/weather-dashboard/" class="btn btn-success" target="_blank">Deployed app</a>
                         </div>
@@ -258,7 +263,7 @@
                     
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <img src="./assets/images/work-day-scheduler.JPG" class="card-img-top" alt="...">
+                        <img src="./assets/images/work-day-scheduler.JPG" class="card-img-top" alt="Screen capture of the workday schedule app">
                         <div class="card-body class-card-body">
                             <h5 class="card-title">Work Day Scheduler</h5>
                             <p class="card-text">
@@ -276,7 +281,7 @@
                 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <video src="./assets/videos/code-quiz.mp4" autoplay loop muted controls controlslist="nodownload">Short demonstration of code quiz app</video>
+                        <video src="./assets/videos/code-quiz.mp4" loop muted controls controlslist="nodownload">Code quiz app</video>
                         <div class="card-body class-card-body">
                             <h5 class="card-title">Coding Quiz</h5>
                             <p class="card-text">
@@ -293,7 +298,7 @@
 
                 <div class="col class-card">
                     <div class="card border-0 rounded-2">
-                        <video src="./assets/videos/password-generator.mp4" autoplay loop muted controls controlslist="nodownload">Short demonstration of random password generator app</video>
+                        <video src="./assets/videos/password-generator.mp4" loop muted controls controlslist="nodownload">Random password generator app</video>
                         <div class="card-body class-card-body">
                             <h5 class="card-title">Random Password Generator</h5>
                             <p class="card-text">
@@ -308,25 +313,10 @@
                     </div>
                 </div>
 
-                <div class="col class-card">
-                    <div class="card border-0 rounded-2"> 
-                        <img src="./assets/images/run-buddy-still.JPG" class="card-img-top" alt="...">
-                        <div class="card-body class-card-body">
-                            <h5 class="card-title">Run Buddy, Inc</h5> <!-- https://gfycat.com/skinnyincompatiblecoqui -->
-                            <p class="card-text">A built-to-specification fitness website for those looking to get in shape. Fully mobile-responsive.</p>
-                            <a href="https://github.com/jcomp-03/run-buddy" class="btn btn-success" target="_blank">GitHub repo</a>
-                            <a href="https://jcomp-03.github.io/run-buddy/" class="btn btn-success" target="_blank">Deployed app</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
             </div>
                    
             <!-- contact me -->
-            <div class="row justify-content-center mx-auto class-section-title" id="id-title-contact-me">how to reach me</div>
+            <div class="row justify-content-center mx-auto class-section-title">how to reach me</div>
             <div class="row justify-content-center class-bottom-border">
                 <div class="col-8" id="id-div-logos">
                     <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><img id="id-logo-linkedin" src="./assets/icons/LinkedIn.svg" alt="LinkedIn logo goes here..."></a>
@@ -335,14 +325,14 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center mx-auto class-section-title" id="id-title-my-resume">the resume</div>
+            <div class="row justify-content-center mx-auto class-section-title">the resume</div>
             <div class="row class-bottom-border">
                 <p class="class-website-text">
                     My resume can be downloaded here.
                 </p>
             </div>
 
-            <div class="row justify-content-center mx-auto class-section-title" id="id-title-my-resume">miscellaneous</div>
+            <div class="row justify-content-center mx-auto class-section-title">miscellaneous</div>
             <div class="row class-bottom-border">
                 <p class="class-website-text">
                     
