@@ -127,35 +127,24 @@ header div span {
 /* WORK PORTFOLIO STYLING ENDS */
 
 /* CONTACT ME STYLING */
-#id-div-logos {
-    /* border: solid 2px black; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.class-contact-me-logos {
+
 }
-#id-div-logos a {
-    /* border: solid 2px black; */
-    color: var(--textColor2);
-    text-decoration: none;
+.class-contact-me-logos a {
     font-size: 12em;
+    text-decoration: none;
+    margin-bottom: 0.2em
 }
-#id-logo-linkedin {
-    /* border: solid 2px black; */
-    width: 125px;
-    height: auto;
-    margin-bottom: 0.2em;
+.class-contact-me-logos > .class-linkedin {
+    color: #0072b1;    
 }
-#id-div-logos a i {
-    /* border: solid 2px black; */
-    margin: 0 0.3em;
+.class-contact-me-logos > .class-github {
+    color: var(--colorMain5);    
 }
-#id-logo-github {
-    /* border: solid 2px black; */
-    width: 125px;
-    height: auto;
-    margin-bottom: 0.2em;
+.class-contact-me-logos > .class-mailto {
+    color: var(--colorMain2);    
 }
+
 
 /***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
 .class-ul-li-div:hover {
