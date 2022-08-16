@@ -78,6 +78,64 @@ header div span {
 }
 /* HEADER STYLING ENDS */
 
+/* JUMBOTRON STYLING */
+.jumbotron-container svg {
+    width: 100%;
+    height: auto;
+}
+.path-container {
+    transform-origin: center;
+    transform: scale(0.79); 
+}
+.pathh {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: dash 3s linear forwards;
+}
+.dashed {
+    stroke-dasharray: .05;
+}
+
+@keyframes dash {
+    from {
+      stroke-dashoffset: 1;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.path-1 {
+    transform: translate(-5.5%, -2%); 
+}
+.path-2 {
+    transform: translate(-7%, -11%); 
+}
+.path-3 {
+    transform: translate(-6.5%, -7%); 
+}
+.path-4 {
+    transform: translate(-7.5%, -6%); 
+}
+.path-5 {
+    transform: translate(-7.5%, -5%); 
+}
+.path-6 {
+    transform: translate(-9.5%, -4.5%); 
+}
+.path-7 {
+    transform: translate(-9.5%, -7%); 
+}
+.path-8 {
+    transform: translate(-11.5%, -2%); 
+}
+.path-9 {
+    transform: translate(79.2%, 20%); 
+}
+.path-10 {
+    transform: translate(-12%, -2%); 
+}
+
+/* JUMBOTRON STYLING ENDS*/
 
 /* ABOUT ME STYLING */
 #about-me {
