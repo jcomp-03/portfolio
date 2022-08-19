@@ -14,6 +14,7 @@
     --stdFontSize: 12px;
     --stdBorder1: solid 4px var(--textColor1);
     --stdBorder2: solid 4px var(--textColor2);
+    --stdBorder3: solid 2px var(--colorMain5);
 }
 
 /* ZERO OUT ANY USER-AGENT-ASSIGNED MARGINS, PADDINGS, ETC. */ 
@@ -35,7 +36,6 @@ body {
 }
 /* BODY STYLING ENDS */
 
-
 /* HEADER STYLING BEGINS */
 header {
     padding: 1em 0;
@@ -43,14 +43,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    align-items: center;
+    align-items:center;
     /* background-image: linear-gradient(var(--colorMain5), var(--colorMain1)); */
     background-color: var(--textColor1);
+    border-bottom: solid 0.2em white;
 }
-header div span {
-    font-family: 'Patua One', cursive;
+.animation-container-greeting {
+    margin-left: 1em;
+}
+.animation-container-greeting span {
+    font-family: 'Wellfleet', cursive;
     color: var(--textColor2);
-    font-size: 2.4em;
+    font-size: 1.8em;
     white-space: pre;
     opacity: 0;
 }
@@ -67,40 +71,87 @@ header div span {
 }
 .class-ul-li-div-a {
     padding: 0;
-    font-family: 'Concert One', cursive;
-    color: var(--textColor1);
-    font-size: 2.2em;
+    font-family: 'Noto Sans Mono', monospace;
+    color: var(--colorMain5);
+    font-size: 1.0em;
 }
 .class-ul-li-div-i {
-    padding-left: 0.2em;
-    padding-top: 10px;
-    font-size: 1.6em;
+    padding-left: 0.3em;
+    padding-top: 0.2em;
+    font-size: 1.3em;
     color: black;
+}
+i.fingerprint {
+    color: var(--textColor2);
+}
+i.hammer {
+    color: #DDBA00;
+}
+i.envelope {
+    color: blue;
+}
+i.resume {
+    color:seagreen
+}
+i.miscellaneous {
+    color: white;
 }
 /* HEADER STYLING ENDS */
 
+/* ABOUT ME STYLING */
+.about-me {
+    margin: 10em 0;
+}
+.about-me div:nth-child(2) {
+    margin-left: 2em;
+}
+.about-me div:nth-child(2) a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+#about-me-profile {
+    border-radius: 300px;
+    max-height: 400px;
+    display: block;
+}
+/* ABOUT ME STYLING ENDS */
+
 /* JUMBOTRON STYLING */
 .jumbotron-container {
-    margin: 5em 3em;
+    margin: 5em 2em;
+    background-color: #DDBA00;
 }
-.jumbotron-container svg {
+.jumbotron-container span {
+    margin: 0 3em 0 2em;
+}
+.jumbotron-container div {
+    width: 90%;
+    margin: auto;
+}
+.jumbotron-container div svg {
     width: 100%;
     height: auto;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+    border-top: var(--stdBorder3);
+    border-bottom: var(--stdBorder3);
 }
-.dashed {
-    stroke-dasharray: .05;
-}
+
 .path-1 {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
     animation: dash 3s linear forwards;
 }
+.dashed-1 {
+    stroke-dasharray: .05;
+}
 .path-2 {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
     animation: dash 3s linear 3s forwards;
+}
+.dashed-2 {
+    stroke-dasharray: .05;
 }
 .path-3 {
     stroke-dasharray: 1;
@@ -176,18 +227,6 @@ header div span {
 }
 /* JUMBOTRON STYLING ENDS*/
 
-/* ABOUT ME STYLING */
-#about-me {
-    border-bottom: double 10px var(--colorMain5);
-}
-#about-me-profile {
-    border-radius: 300px;
-    max-height: 400px;
-    display: block;
-}
-/* ABOUT ME STYLING ENDS */
-
-
 /* WORK PORTFOLIO STYLING */
 .class-rome {
     text-align: center;
@@ -196,7 +235,6 @@ header div span {
     margin-left: auto;
     margin-right: auto;
 }
-
 .class-banner-card {
     padding: 1.5em 1.5em 1.5em 10em;
     background-color: var(--textColor2);
@@ -208,7 +246,6 @@ header div span {
     background-color: var(--textColor2);
     border-radius: 20px;
 }
-
 .class-card-body {
     margin: 0;
     background-color: var(--textColor1);
@@ -280,25 +317,16 @@ header div span {
 
 /***** MEDIA QUERY FOR MOBILE AND SMALLER *****/
 @media screen and (max-width: 575px) {
-    header div span {
-        color: var(--textColor1);
-        font-size: 2em;
-    }
     .class-ul-li {
         font-size: 1.0em;
         width: 100%;
     }
     .class-ul-li-div {
-        justify-content: center;
-    }
-    .class-ul-li-div-a {
-        color: var(--textColor2);
+        justify-content: flex-end;
     }
     .class-ul-li-div-i {
-        padding-left: 0.2em;
-        padding-top: 10px;
+        /* padding-top: 10px; */
         font-size: 1.6em;
-        color: black;
     }
     .class-banner-card {
         padding: 1.5em;
@@ -307,7 +335,7 @@ header div span {
 
 /***** MEDIA QUERY FOR TABLET AND LARGER *****/
 @media screen and (min-width: 768px) {
-    header div span {
+    .animation-container-greeting span {
         font-size: 3em;
     }
     .class-ul-li-div:hover {
@@ -337,13 +365,16 @@ header div span {
 
 /***** MEDIA QUERY FOR DESKTOP SCREEN AND LARGER *****/
 @media screen and (min-width: 992px) {
-    header div span {
-        color: var(--textColor1);
-        font-size: 5em;
+    header {
+        flex-direction: row;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    .jumbotron-container {
+        margin: 15em 0 5em;
     }
     .class-ul-li-div-a {
-        color: var(--textColor2);
-        font-size: 2.2em;
+        font-size: 1.5em;
     }
     .class-ul-li {
         margin: 0 1.5em;
