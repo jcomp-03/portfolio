@@ -1,20 +1,28 @@
-console.log('Script filed is read');
 const jumbotron = document.getElementById("jumbotron");
+const dashNodeList = document.querySelectorAll(".dash");
+const pathNodeList = document.querySelectorAll(".path");
+const duration = [3, 3, 6, 6, 3, 8, 3, 3, 2, 6];
+const dashLengths = [.05, .05, .02, .02, .04, .02, .06, .04, .15, .03];
+
 let animationCount = 0;
-const dashValues = [.05, .05, .02, .02, .04, .02, .06, .04, .15, .03];
-const pathNodeList = document.get
+
 function beginJourney(e) {
-
     if(!animationCount) {
+        dashNodeList.forEach( (pathEl, i) => {
+            pathEl.setAttribute("style", `stroke-dasharray: ${dashLengths[i]}`);
+        })
 
+        let delay;
+        pathNodeList.forEach( (pathEl, i) => {
+            pathEl.setAttribute("style", `stroke-dasharray: 1; stroke-dashoffset: 1; animation: dash ${duration[i]}s linear ${delay ? `${delay}s ` : ""}forwards`); 
+            if(i === 0) {
+                delay = duration[i];
+            } else {
+                delay += duration[i];
+            }
+        })
     }
-    let target = e.target;
-    console.log("The callback function was invoked");
+    animationCount++;
 }
 
 jumbotron.addEventListener('mouseenter', beginJourney);
-
-// const tooltips = document.querySelectorAll('.tt');
-// tooltips.forEach(tt => {
-//     new bootstrap.Tooltip(tt);
-// })

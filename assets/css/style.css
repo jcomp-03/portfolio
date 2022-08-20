@@ -100,10 +100,10 @@ i.miscellaneous {
 
 /* ABOUT ME STYLING */
 .about-me {
-    margin: 10em 0;
+    margin: 5em 0 10em;
 }
 .about-me div:nth-child(2) {
-    margin-left: 2em;
+    margin: 0 2em;
 }
 .about-me div:nth-child(2) a {
     text-decoration: none;
@@ -120,15 +120,15 @@ i.miscellaneous {
 
 /* JUMBOTRON STYLING */
 .jumbotron-container {
-    margin: 5em 2em;
-    background-color: #DDBA00;
+    margin: 5em 0;
+    /* background-color: #DDBA00; */
 }
-.jumbotron-container span {
-    margin: 0 3em 0 2em;
+.jumbotron-container p {
+    margin: 0 2em;
 }
 .jumbotron-container div {
     width: 90%;
-    margin: auto;
+    margin: 3em auto 0;
 }
 .jumbotron-container div svg {
     width: 100%;
@@ -137,86 +137,6 @@ i.miscellaneous {
     border-bottom: var(--stdBorder3);
 }
 
-.path-1 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 3s linear forwards;
-}
-.dashed-1 {
-    stroke-dasharray: .05;
-}
-.path-2 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 3s linear 3s forwards;
-}
-.dashed-2 {
-    stroke-dasharray: .05;
-}
-.path-3 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 6s linear 6s forwards;
-}
-.dashed-3 {
-    stroke-dasharray: .02;
-}
-.path-4 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 6s linear 12s forwards;
-}
-.dashed-4 {
-    stroke-dasharray: .02;
-}
-.path-5 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 3s linear 18s forwards;
-}
-.dashed-5 {
-    stroke-dasharray: .04;
-}
-.path-6 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 8s linear 21s forwards;
-}
-.dashed-6 {
-    stroke-dasharray: .02;
-}
-.path-7 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 3s linear 29s forwards;
-}
-.dashed-7 {
-    stroke-dasharray: .06;
-}
-.path-8 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 3s linear 32s forwards;
-}
-.dashed-8 {
-    stroke-dasharray: .04;
-}
-.path-9 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 2s linear 35s forwards;
-}
-.dashed-9 {
-    stroke-dasharray: .15;
-}
-.path-10 {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    animation: dash 6s linear 37s forwards;
-}
-.dashed-10 {
-    stroke-dasharray: .03;
-}
 @keyframes dash {
     from {
       stroke-dashoffset: 1;
@@ -371,7 +291,7 @@ i.miscellaneous {
         flex-wrap: wrap;
     }
     .jumbotron-container {
-        margin: 15em 0 5em;
+        margin: 12em 0 5em;
     }
     .class-ul-li-div-a {
         font-size: 1.5em;
@@ -428,3 +348,18 @@ i.miscellaneous {
 .intro-text-30 {animation: 100ms changeOpacity 16.0s 1 forwards normal;}
 .intro-text-31 {animation: 100ms changeOpacity 16.5s 1 forwards normal;}
 .intro-text-32 {animation: 100ms changeOpacity 17.0s 1 forwards normal;}
+
+/* .dashed-1 {
+    stroke-dasharray: .05;
+}
+
+.path-1 {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: dash 3s linear forwards;
+}
+.path-2 {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: dash 3s linear 3s forwards;
+}
