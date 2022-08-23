@@ -14,7 +14,7 @@ function beginJourney(e) {
 
         let delay;
         pathNodeList.forEach( (pathEl, i) => {
-            pathEl.setAttribute("style", `stroke-dasharray: 1; stroke-dashoffset: 1; animation: dash ${duration[i]}s linear ${delay ? `${delay}s ` : ""}forwards`); 
+            pathEl.setAttribute("style", `animation: dash ${duration[i]}s linear ${delay ? `${delay}s ` : ""}forwards; stroke-dasharray: 1; stroke-dashoffset: 1;`); 
             if(i === 0) {
                 delay = duration[i];
             } else {

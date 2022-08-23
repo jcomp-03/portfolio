@@ -24,6 +24,7 @@
     box-sizing: border-box;
 }
 
+
 /* BODY STYLING BEGINS */
 body {
     height: 100%;
@@ -35,6 +36,8 @@ body {
     color: var(--textColor2);
 }
 /* BODY STYLING ENDS */
+
+
 
 /* HEADER STYLING BEGINS */
 header {
@@ -54,19 +57,20 @@ header {
 .animation-container-greeting span {
     font-family: 'Wellfleet', cursive;
     color: var(--textColor2);
-    font-size: 1.8em;
+    font-size: 1.6em;
     white-space: pre;
     opacity: 0;
 }
 .class-ul {
-    justify-content: space-evenly;
 }
 .class-ul-li {
-    font-size: 1.2em;
+    font-size: 1em;
+    width: 100%;
     margin: 0 0.5em;
 }
 .class-ul-li-div {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 .class-ul-li-div-a {
@@ -78,9 +82,10 @@ header {
 .class-ul-li-div-i {
     padding-left: 0.3em;
     padding-top: 0.2em;
-    font-size: 1.3em;
+    font-size: 1.6em;
     color: black;
 }
+
 i.fingerprint {
     color: var(--textColor2);
 }
@@ -98,12 +103,14 @@ i.miscellaneous {
 }
 /* HEADER STYLING ENDS */
 
+
+
 /* ABOUT ME STYLING */
 .about-me {
     margin: 5em 0 10em;
 }
 .about-me div:nth-child(2) {
-    margin: 0 2em;
+    /* margin: 0 2em; */
 }
 .about-me div:nth-child(2) a {
     text-decoration: none;
@@ -118,13 +125,14 @@ i.miscellaneous {
 }
 /* ABOUT ME STYLING ENDS */
 
+
+
 /* JUMBOTRON STYLING */
 .jumbotron-container {
     margin: 5em 0;
-    /* background-color: #DDBA00; */
 }
 .jumbotron-container p {
-    margin: 0 2em;
+    /* margin: 0 2em; */
 }
 .jumbotron-container div {
     width: 90%;
@@ -147,44 +155,57 @@ i.miscellaneous {
 }
 /* JUMBOTRON STYLING ENDS*/
 
+
+
 /* WORK PORTFOLIO STYLING */
-.class-rome {
-    text-align: center;
-    opacity: 0;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+.card-content {
+    align-items: center;
+    margin: 0;
 }
-.class-banner-card {
-    padding: 1.5em 1.5em 1.5em 10em;
-    background-color: var(--textColor2);
-    border-radius: 20px;
-    margin: auto 0;
+.card-style {
+    background-color: var(--textColor1);
+    padding: 1.5em;
 }
 .class-card {
     padding: 1.5em;
-    background-color: var(--textColor2);
+    background-color: var(--textColor1);
     border-radius: 20px;
 }
-.class-card-body {
-    margin: 0;
-    background-color: var(--textColor1);
+.card-text-container {
+    flex: 0 0 auto;
+    padding-top: 0;
 }
-.card-title {
-    font-weight: bolder;
+.card-text-container h5 {
+    font-weight: bold;
     text-align: center;
+}
+
+.card-text-container p {
+    text-align: justify;
+    font-weight: normal;
 }
 .card-text {
     font-size: 1.2em;
     font-weight: bolder;
     color: var(--colorMain5);
 }
+.card-text-container a {
+    display: block;
+    margin-top: 0.5em;
+}
+.card-image-container {
+    /* height: 100%; */
+    padding: 0;
+}
+.class-video {
+    width: 100%;
+    /* height: auto; */
+}
 /* WORK PORTFOLIO STYLING ENDS */
 
-/* CONTACT ME STYLING */
-.class-contact-me-logos {
 
-}
+
+/* CONTACT ME STYLING */
 .class-contact-me-logos a {
     font-size: 12em;
     text-decoration: none;
@@ -222,9 +243,9 @@ i.miscellaneous {
 }
 .class-website-text {
     font-family: 'Source Code Pro', monospace;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: justify;
-    padding: 0 1em;
+    padding-left: 2.3em;
 }
 .class-bottom-border {
     padding-bottom: 2em;
@@ -235,23 +256,35 @@ i.miscellaneous {
     min-height: 25em;
 }
 
+
 /***** MEDIA QUERY FOR MOBILE AND SMALLER *****/
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 575px) {
+    .animation-container-greeting span {
+        font-size: 1.8em;
+    }
+    .class-ul {
+        flex-wrap: nowrap;
+    }
     .class-ul-li {
         font-size: 1.0em;
         width: 100%;
     }
     .class-ul-li-div {
-        justify-content: flex-end;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
     .class-ul-li-div-i {
-        /* padding-top: 10px; */
         font-size: 1.6em;
     }
-    .class-banner-card {
-        padding: 1.5em;
+    .card-text-container a {
+        display: inline;
+    }
+    .card-text-container a:nth-of-type(2){
+        margin-left: 1em;
     }
 }
+
 
 /***** MEDIA QUERY FOR TABLET AND LARGER *****/
 @media screen and (min-width: 768px) {
@@ -299,15 +332,41 @@ i.miscellaneous {
     .class-ul-li {
         margin: 0 1.5em;
     }
+    .class-website-text {
+        font-size: 1.4em;
+    }
     .class-head-profile {
         margin: auto 0;
     }
+    .align-end {
+        align-self: flex-end;
+    }
+    .switch-order {
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .class-website-text {
+        font-size: 1.5em;
+    }
+    .card-content {
+        align-items: stretch;
+    }
+    .card-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
     .card-title {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .card-text {
-        font-size: 1.2em;
-
+        font-size: 1.4em;
     }
 }
 
