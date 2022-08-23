@@ -175,7 +175,6 @@ i.miscellaneous {
     font-weight: bold;
     text-align: center;
 }
-
 .card-text-container p {
     text-align: justify;
     font-weight: normal;
@@ -261,13 +260,7 @@ i.miscellaneous {
     .nav {
         flex-wrap: nowrap;
     }
-    .list-item {
-        font-size: 1.0em;
-        width: 100%;
-    }
     .list-item-div {
-        flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: center;
     }
     .navbar-icon {
@@ -287,6 +280,9 @@ i.miscellaneous {
     }
     .list-item-div:hover {
         transform: scale(1.2, 1.2);
+    }
+    .navbar-anchor {
+        font-size: 1.5em;
     }
     .class-section-title {
         margin-bottom: 1em;
@@ -313,17 +309,14 @@ i.miscellaneous {
 @media screen and (min-width: 992px) {
     header {
         flex-direction: row;
-        justify-content:space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-    }
-    .jumbotron-container {
-        margin: 12em 0 5em;
-    }
-    .navbar-anchor {
-        font-size: 1.5em;
     }
     .list-item {
         margin: 0 1.5em;
+    }
+    .jumbotron-container {
+        margin: 12em 0 5em;
     }
     .class-website-text {
         font-size: 1.4em;
@@ -355,6 +348,12 @@ i.miscellaneous {
 }
 
 @media screen and (min-width: 1400px) {
+    /* nav {
+        align-self: flex-end;
+    } */
+    header {
+        justify-content: space-between;
+    }
     .card-title {
         font-size: 2em;
     }
