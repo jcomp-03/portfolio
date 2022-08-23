@@ -47,7 +47,6 @@ header {
     flex-direction: column;
     justify-content:space-between;
     align-items:center;
-    /* background-image: linear-gradient(var(--colorMain5), var(--colorMain1)); */
     background-color: var(--textColor1);
     border-bottom: solid 0.2em white;
 }
@@ -61,31 +60,28 @@ header {
     white-space: pre;
     opacity: 0;
 }
-.class-ul {
-}
-.class-ul-li {
+.list-item {
     font-size: 1em;
     width: 100%;
     margin: 0 0.5em;
 }
-.class-ul-li-div {
+.list-item-div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.class-ul-li-div-a {
+.navbar-anchor {
     padding: 0;
     font-family: 'Noto Sans Mono', monospace;
     color: var(--colorMain5);
     font-size: 1.0em;
 }
-.class-ul-li-div-i {
+.navbar-icon {
     padding-left: 0.3em;
     padding-top: 0.2em;
     font-size: 1.6em;
     color: black;
 }
-
 i.fingerprint {
     color: var(--textColor2);
 }
@@ -223,10 +219,10 @@ i.miscellaneous {
 
 
 /***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
-.class-ul-li-div:hover {
+.list-item-div:hover {
     transform: scale(1.1, 1.1);
 }
-.class-ul-li-div-a:hover {
+.navbar-anchor:hover {
     color: var(--textColor2);
 }
 .class-rome:hover {
@@ -257,24 +253,24 @@ i.miscellaneous {
 }
 
 
-/***** MEDIA QUERY FOR MOBILE AND SMALLER *****/
+/***** MEDIA QUERIES *****/
 @media screen and (min-width: 575px) {
     .animation-container-greeting span {
         font-size: 1.8em;
     }
-    .class-ul {
+    .nav {
         flex-wrap: nowrap;
     }
-    .class-ul-li {
+    .list-item {
         font-size: 1.0em;
         width: 100%;
     }
-    .class-ul-li-div {
+    .list-item-div {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
     }
-    .class-ul-li-div-i {
+    .navbar-icon {
         font-size: 1.6em;
     }
     .card-text-container a {
@@ -285,13 +281,11 @@ i.miscellaneous {
     }
 }
 
-
-/***** MEDIA QUERY FOR TABLET AND LARGER *****/
 @media screen and (min-width: 768px) {
     .animation-container-greeting span {
         font-size: 3em;
     }
-    .class-ul-li-div:hover {
+    .list-item-div:hover {
         transform: scale(1.2, 1.2);
     }
     .class-section-title {
@@ -316,7 +310,6 @@ i.miscellaneous {
 
 }
 
-/***** MEDIA QUERY FOR DESKTOP SCREEN AND LARGER *****/
 @media screen and (min-width: 992px) {
     header {
         flex-direction: row;
@@ -326,10 +319,10 @@ i.miscellaneous {
     .jumbotron-container {
         margin: 12em 0 5em;
     }
-    .class-ul-li-div-a {
+    .navbar-anchor {
         font-size: 1.5em;
     }
-    .class-ul-li {
+    .list-item {
         margin: 0 1.5em;
     }
     .class-website-text {
