@@ -112,10 +112,10 @@
       I use Bootstrap, mostly for its Container layout element and Card component. You can see that
       in the work section. The fonts I use are pulled from Google Fonts, and the icons you see
       throughout are from the icon library Font Awesome (which I love as a resource for adding pizazz to a web page).
-      Before you leave, spend a moment to learn more about my <a href="about.html">background</a>
-      and review my <a href="#title-my-work">work</a>.
+      Before you leave, spend a moment to learn more about my <a href="about.html" class="link-style">background</a>
+      and review my <a href="#title-my-work" class="link-style">work</a>.
       <br /><br />
-      The SVG element you see below is a composite of a PNG image which was
+      The infographic you see below shows all the placed I have lived to date. It is a composite of a PNG image which was
       created with Canva, and a number of paths made with Adobe Illustrator
       and layered over the image. The animation is achieved with CSS
       and involved duplicating the paths, using attributes like stroke-dasharray
@@ -128,11 +128,7 @@
   </div>
 
   <!-- jumbotron -->
-  <div id="jumbotron" class="jumbotron-container">
-    <p class="class-website-text">
-      This infographic shows all the places I've lived to date; the die symbolizes where I am yet to go!
-      Mouse over the graphic to begin the animation.
-    </p>
+  <div id="jumbotron" class="row jumbotron-container">
     <div>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 816 192.2" enable-background="new 0 0 816 192.2">
@@ -3988,7 +3984,6 @@
         </g>
       </svg>
     </div>
-
   </div>
 
   <!-- main container -->
@@ -3999,14 +3994,24 @@
       My Work
     </div>
     <p class="class-website-text">
-      Here you can find my portfolio of projects which I've authored
-      individually or in partnership with a team of people. Here you can find my portfolio of projects which I've
-      authored
-      individually or in partnership with a team of people. Here you can find my portfolio of projects which I've
-      authored
-      individually or in partnership with a team of people. Here you can find my portfolio of projects which I've
-      authored
-      individually or in partnership with a team of people.
+      The apps I have worked on span a number of technologies, libraries, and frameworks.
+      The cards below represent a subset of that work. I invite you to vist my
+      <a href="https://github.com/jcomp-03" class="link-style">GitHub</a> 
+      to see the full portfolio of work.
+      <br>
+      <br>
+      As I hope this website may demonstrate, I have a defendable command of HTML and CSS.
+      I take satisfaction in my knowledge of JavaScript to realize conditional events 
+      and rendering or styling of HTML markup and CSS, respectively.  My JavaScript practice has
+      involves many of the features debuted in its 2015 revision (ES6), including keywords
+      let and const, arrow functions, classes, promises, rest and spread operators, and
+      methods for iterating over elements in an array, or iterable objects.
+      <br>
+      <br>
+      Migrating towards the back-end of the stack, I have some foundational knowledge and
+      experience with Node.js as a runtime environment for executing JavaScript outside
+      of a browser environment. I have exclusively used Express.js as a web-server framework
+
     </p>
     <br />
 
@@ -4034,7 +4039,7 @@
               </div>
             </div>
             <div class="col-lg-6 card-image-container">
-              <video class="class-video" src="./assets/videos/movie-search.mp4" loop muted controls
+              <video class="graphic-size" src="./assets/videos/movie-search.mp4" loop muted controls
                 controlslist="nodownload" poster="./assets/images/poster-imbd.JPG">
                 Movie search app
               </video>
@@ -4044,23 +4049,19 @@
       </div>
     </div>
 
-    <div class="row g-0 mb-5">
+    <div class="row g-0 mb-5">  
       <div class="col">
         <div class="card card-style border-0">
           <div class="row card-content">
             <div class="col-lg-6 card-body card-text-container">
               <h5 class="card-title">Social Network API</h5>
               <p class="card-text">
-                ✔️ Demonstrates a RESTful API for a social network using a
-                Mongoose ODM to interact with a MongoDB database and make
-                changes.<br />
-                ✔️ Utilizes the object-modeling tool Mongoose to allow altering
-                of database documents via CRUD operations.<br />
-                ✔️ Implements MongoDB, a general purpose, document-based
-                distributed NoSQL database, very popular with web developers
-                today for cloud applications and large, heterogeneous data
-                sets.<br />
-                ✔️ Node.js/Express.js pair for the back-end<br />
+                This repo is an exercise in building an API tailored for a social network website where users can create, update,
+                and delete thoughts, comment on other friend's thoughts, and add other users to their 
+                friends list. It uses Node.js/Express.js backend for handling HTTP requests (GET, POST, PUT, DELETE)
+                to different endpoints; the NoSQL database MongoDB and ODM Mongoose 
+                are used to map MongoDB's document representation of data to a virtual object database.
+                View the walk-through video for an overview of its functionality.
               </p>
               <div class="align-end">
                 <a href="https://github.com/jcomp-03/social-network-api" class="btn btn-success" target="_blank">Go to
@@ -4068,8 +4069,8 @@
               </div>
             </div>
             <div class="col-lg-6 card-image-container switch-order">
-              <video class="class-video" src="./assets/videos/social-network-api-1.mp4" loop muted controls
-                controlslist="nodownload">
+              <video class="graphic-size" src="./assets/videos/social-network-api-1.mp4" loop muted controls
+                controlslist="nodownload" poster="./assets/images/poster-social-network-api.JPG">
                 Social Network API Express.js/MongoDB/Mongoose app
               </video>
             </div>
@@ -4085,16 +4086,14 @@
             <div class="col-lg-6 card-body card-text-container">
               <h5 class="card-title">E-commerce backend</h5>
               <p class="card-text">
-                ✔️ Incorporates Sequelize, an ORM library that creates virtual
-                object databases to abstract away working with raw SQL syntax<br />
-                ✔️ Defines and implements CRUD methods which Sequelize uses to
-                interact with the models in each API endpoint through RESTful
-                commands (GET, POST, PUT, DELETE)<br />
-                ✔️ Creates and implements Sequelize associations to join
-                tables<br />
-                ✔️ Uses third-party package bcrypt to hash password information
-                for security and uses environment variables to protect sensitive
-                data<br />
+                In this repository, I showcase using Sequelize, an object-relational 
+                mapper configured in a Node.js application, to allow me to perform CRUD
+                (create-read-update-delete) operations on an SQL database without ever writing 
+                a line of SQL code. Sequelize is similar to Mongoose for NoSQL-based databases 
+                in that you can use Sequelize to create and define virtual models of objects 
+                and translate HTTP methods into changes on a database. I also use the bcrypt 
+                package to hash password information, and use environment variables for 
+                protecting sensitive data. 
               </p>
               <div>
                 <a href="https://github.com/jcomp-03/e-commerce-back-end" class="btn btn-success" target="_blank">Go to
@@ -4102,8 +4101,8 @@
               </div>
             </div>
             <div class="col-lg-6 card-image-container">
-              <video class="class-video" src="./assets/videos/e-commerce.mp4" loop muted controls
-                controlslist="nodownload">
+              <video class="graphic-size" src="./assets/videos/e-commerce.mp4" loop muted controls
+                controlslist="nodownload" poster="./assets/images/poster-e-commerce-backend.JPG">
                 E-commerce backend
               </video>
             </div>
@@ -4117,19 +4116,14 @@
         <div class="card card-style border-0">
           <div class="row card-content">
             <div class="col-lg-6 card-body card-text-container">
-              <h5 class="card-title">Employee Tracker</h5>
+              <h5 class="card-title">Employee CMS App</h5>
               <p class="card-text">
-                ✔️ Introduces Structured Query Language (SQL) in its most
-                popular form, MySQL<br />
-                ✔️ Incorporates Node.js, Inquirer (3rd-party module) and MySQL
-                to deliver CLI app<br />
-                ✔️ Creates schema and seed files for development of databases
-                and tables<br />
-                ✔️ Creates and drops databases and tables<br />
-                ✔️ Uses CRUD methods to interact with persistent data<br />
-                ✔️ Utilizes joins to establish relationships between distinct
-                tables of information<br />
-                ✔️ Deploys server-side application to the Heroku platform<br />
+                This application is a no-frills command-line application for managing a company's 
+                employee database. I built this simple demo with Node.js, Inquirer.js, and MySQL 
+                for the RDBMS. After the Node.js application connects to a SQL instance, the user is 
+                able to view departments, roles, or employees, make changes (i.e. add a role or employee),
+                or make updates to existing records. A switch statement handles the possible scenarios
+                the user may select.
               </p>
               <div class="align-end">
                 <a href="https://github.com/jcomp-03/employee-tracker" class="btn btn-success" target="_blank">Go to the
@@ -4137,9 +4131,9 @@
               </div>
             </div>
             <div class="col-lg-6 card-image-container switch-order">
-              <video class="class-video" src="./assets/videos/employee-tracker.mp4" loop muted controls
-                controlslist="nodownload">
-                Movie search app
+              <video class="graphic-size" src="./assets/videos/employee-tracker.mp4" loop muted controls
+                controlslist="nodownload" poster="./assets/images/poster-employee-cms.JPG">
+                Employee CMS
               </video>
             </div>
           </div>
@@ -4154,22 +4148,27 @@
             <div class="col-lg-6 card-body card-text-container">
               <h5 class="card-title">Note taker Node.js app</h5>
               <p class="card-text">
-                ✔️ Utilizes Express.js server framework to make API routes and
-                handle associated HTTP GET and POST requests<br />
-                ✔️ Parses parameters in server-side routes<br />
-                ✔️ Demonstrates how client-side requests are handled on the
-                server side<br />
-                ✔️ Implements separation of concerns for routing<br />
-                ✔️ Deploys server-side application to the Heroku platform<br />
+                This app demonstrates my first experience with the popular
+                server framework Express.js for Node. Express allows me to quickly 
+                establish my routes for the different HTTP request methods. Whereas 
+                up until this app's development I only had exposure with client-side
+                requests to a server, this app provided practice in how 
+                to handle user requests at distinct endpoints, or URLs. This app also
+                accompanied my first introduction to Insomnia as a client utility for
+                testing one's routes, as well as the deployment of the app to the cloud
+                application platform Heroku which allows for deploying a server.js file 
+                that runs the Node.js process.
               </p>
               <div>
                 <a href="https://github.com/jcomp-03/note-taker" class="btn btn-success" target="_blank">Go to the
                   GitHub repo</a>
+                  <a href="https://jlcomp-03-wk11-note-taker.herokuapp.com/" class="btn btn-success" target="_blank">Visit the
+                    deployed app</a>
               </div>
             </div>
             <div class="col-lg-6 card-image-container">
-              <video class="class-video" src="./assets/videos/note-taker.mp4" loop muted controls
-                controlslist="nodownload">
+              <video class="graphic-size" src="./assets/videos/note-taker.mp4" loop muted controls
+                controlslist="nodownload" poster="./assets/images/poster-note-taker.JPG">
                 Note taker Node.js app
               </video>
             </div>
@@ -4185,14 +4184,14 @@
             <div class="col-lg-6 card-body card-text-container">
               <h5 class="card-title">Team profile generator Node.js app</h5>
               <p class="card-text">
-                ✔️ Demonstrates object-oriented programming.<br />
-                ✔️ Uses ES6 class syntax to implement inheritance from parent to
-                child<br />
-                ✔️ Shows test-driven development (red, green, refactor)<br />
-                ✔️ Uses Jest JavaScript testing framework, pairs well with
-                Node.js<br />
-                ✔️ Takes user input and uses template literals to dynamically
-                generate HTML page from CLI
+                This app was a lot of fun to build and challenged me to integrate a lot of the 
+                material I had learned up to that point in my program. The app comprises 
+                a command-line application which uses Inquirer.js package to take in user 
+                input, and interpolates the information into HTML templates to build out
+                the rendered webpage. The development involved implementing OOP principles like 
+                inheritance with modern ES6 class syntax, writing unit tests to assure code 
+                acted like intended, and taking user input and using template literals to dynamically
+                generate an entire HTML page from the command line.
               </p>
               <div class="align-end">
                 <a href="https://github.com/jcomp-03/team-profile-generator" class="btn btn-success" target="_blank">Go
@@ -4200,8 +4199,8 @@
               </div>
             </div>
             <div class="col-lg-6 card-image-container switch-order">
-              <video class="class-video" src="./assets/videos/team-profile-generator.mp4" loop muted controls
-                poster="./assets/images/pic-team-profile-generator.JPG" controlslist="nodownload">
+              <video class="graphic-size" src="./assets/videos/team-profile-generator.mp4" loop muted controls
+                poster="./assets/images/poster-team-profile-generator.JPG" controlslist="nodownload">
                 Team profile generator Node.js app
               </video>
             </div>
@@ -4217,13 +4216,12 @@
             <div class="col-lg-6 card-body card-text-container">
               <h5 class="card-title">Professional README generator Node.js app</h5>
               <p class="card-text">
-                ✔️ Utilizes Express.js server framework to make API routes and
-                handle associated HTTP GET and POST requests<br />
-                ✔️ Parses parameters in server-side routes<br />
-                ✔️ Demonstrates how client-side requests are handled on the
-                server side<br />
-                ✔️ Implements separation of concerns for routing<br />
-                ✔️ Deploys server-side application to the Heroku platform<br />
+                This app served me most practically during my time in the bootcamp. 
+                The third-party module Inquirer is used to prompt and store user input;
+                that input is subsequently passed into a helper function which will return 
+                a markdown string that is saved to a file as README.md. In terms of saving time, 
+                I found this assignment to be very helpful, and I still use it today in
+                situations where a markdown file is required.
               </p>
               <div>
                 <a href="https://github.com/jcomp-03/README-generator" class="btn btn-success" target="_blank">Go to the
@@ -4231,7 +4229,7 @@
               </div>
             </div>
             <div class="col-lg-6 card-image-container">
-              <video class="class-video" src="./assets/videos/readme-generator.mp4"
+              <video class="graphic-size" src="./assets/videos/readme-generator.mp4"
                 poster="./assets/images/poster-readme-generator.JPG" loop muted controls controlslist="nodownload">
                 README generator Node.js app
               </video>
@@ -4248,15 +4246,14 @@
             <div class="col-lg-6 card-body card-text-container">
               <h5 class="card-title">Weather Dashboard</h5>
               <p class="card-text">
-                ✔️ Uses Fetch API to make request for data from server-side APIs
-                and integrates the data into the webpage<br />
-                ✔️ Takes validated user input, makes dynamic HTTP requests to
-                third-party server, and returns relevant weather data<br />
-                ✔️ Parses JSON data to dynamically generate HTML<br />
-                ✔️ Handles HTTP response codes by alerting user of possible bad
-                search string<br />
-                ✔️ Fully mobile-responsive such that app is vieweable from
-                mobile through desktop screens
+                This webpage involved making HTTP requests to server-side APIs for data 
+                using the Fetch API, and then subsequently integrating the data into the
+                webpage. User input is validated, passed into the fetch URL, and relevant 
+                weather data is retrieved. The weather data is parsed from JSON notation
+                and converted into regular JavaScript objects. Properties of the object are
+                accessed using dot notation and used to populate certain parts of the webpage.
+                The site is fully mobile-responsive. Local Storage API is also used for storing 
+                and retrieving city names.
               </p>
               <div class="align-end">
                 <a href="https://github.com/jcomp-03/weather-dashboard" class="btn btn-success" target="_blank">Go to
@@ -4266,7 +4263,7 @@
               </div>
             </div>
             <div class="col-lg-6 card-image-container switch-order">
-              <video class="class-video" src="./assets/videos/weather-dashboard.mp4"
+              <video class="graphic-size" src="./assets/videos/weather-dashboard.mp4"
                 poster="./assets/images/poster-weather-dashboard.JPG" loop muted controls controlslist="nodownload">
                 Weather dashboard app
               </video>
@@ -4283,15 +4280,13 @@
             <div class="col-lg-6 card-body card-text-container">
               <h5 class="card-title">Work Day Scheduler</h5>
               <p class="card-text">
-                ✔️ Introduces third-party APIs, libraries/frameworks which allow
-                additional functionality<br />
-                ✔️ First foray into Bootstrap, most popular open-source,
-                front-end CSS framework<br />
-                ✔️ Experiments with third-party API jQuery, for quick DOM
-                manipulation/traversal<br />
-                ✔️ Introduces Moment.js for easier interaction with dates<br />
-                ✔️ Uses content delivery networks (CDN) for supplying styling
-                and fonts<br />
+                This app is a simple workday scheduler, built mostly for practice 
+                in introducing third-party APIs, libraries, and frameworks into
+                development for adding functionality. The popular front-end CSS 
+                framework Bootstrap is used, as well as jQuery, and Moment.js. jQuery 
+                is very good at DOM manipulation/traversal. Moment.js is used for 
+                easy interaction with dates. A content delivery network (CDN) is used 
+                for supplying styling and fonts. 
               </p>
               <div>
                 <a href="https://github.com/jcomp-03/work-day-scheduler" class="btn btn-success" target="_blank">Go to
@@ -4301,7 +4296,7 @@
               </div>
             </div>
             <div class="col-lg-6 card-image-container">
-              <img src="./assets/images/work-day-scheduler.JPG" class="class-video card-img-top"
+              <img src="./assets/images/work-day-scheduler.JPG" class="graphic-size card-img-top"
                 alt="Screen capture of the workday schedule app" />
             </div>
           </div>
@@ -4316,13 +4311,13 @@
             <div class="col-lg-6 card-body card-text-container">
               <h5 class="card-title">Code Quiz</h5>
               <p class="card-text">
-                ✔️ Introduces browser web APIs for interfacing with
-                JavaScript<br />
-                ✔️ Example of web API called DOM API for interacting with HTML &
-                CSS<br />
-                ✔️ Shows dynamic HTML creation as a result of user-initiated
-                events (think key pressed and clicks)<br />
-                ✔️ Uses the windows object for local storage<br />
+                This app showcases a timer-based coding quiz that stores high scores 
+                using client-side storage. It introduces browser web APIs for interfacing 
+                with JavaScript. Some features of the quiz are: listening for mouse click events 
+                from the user; using for loops to cycle through the quiz questions; creating a 
+                time limit for the game using time functions, executing conditional logic to 
+                determine right and wrong answers; and using GitHub pages to publish the static HTML 
+                file.
               </p>
               <div class="align-end">
                 <a href="https://github.com/jcomp-03/code-quiz" class="btn btn-success" target="_blank">Go to the GitHub
@@ -4332,41 +4327,9 @@
               </div>
             </div>
             <div class="col-lg-6 card-image-container switch-order">
-              <video class="class-video" src="./assets/videos/code-quiz.mp4" loop muted controls
+              <video class="graphic-size" src="./assets/videos/code-quiz.mp4" loop muted controls
                 controlslist="nodownload">
                 Code Quiz
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row g-0 mb-5">
-      <div class="col">
-        <div class="card card-style border-0">
-          <div class="row card-content">
-            <div class="col-lg-6 card-body card-text-container">
-              <h5 class="card-title">Random password generator</h5>
-              <p class="card-text">
-                ✔️ Example for writing conditional statements<br />
-                ✔️ Creates variables containing different data types<br />
-                ✔️ Implements for loop to create password from selected
-                criteria<br />
-                ✔️ Uses functions to display back to user the randomly-generated
-                password<br />
-              </p>
-              <div>
-                <a href="https://github.com/jcomp-03/password-generator" class="btn btn-success" target="_blank">Go to
-                  the GitHub repo</a>
-                <a href="https://jcomp-03.github.io/password-generator/" class="btn btn-success" target="_blank">Visit
-                  the deployed app</a>
-              </div>
-            </div>
-            <div class="col-lg-6 card-image-container">
-              <video class="class-video" src="./assets/videos/password-generator.mp4" loop muted controls
-                controlslist="nodownload">
-                Random password generator app
               </video>
             </div>
           </div>
