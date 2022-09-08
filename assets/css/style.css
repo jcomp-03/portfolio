@@ -251,6 +251,10 @@ i.miscellaneous {
     color: black;
     font-weight: bold;
 }
+.emphasize {
+    font-style: italic;
+    font-weight: bold;
+}
 
 
 /***** MEDIA QUERIES *****/
