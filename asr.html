@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <!-- <link href="./assets/images/favicon-16x16.png" rel="icon" type=""> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Noto+Sans+Mono:wght@600&family=Patua+One&family=Source+Code+Pro:wght@600&family=Balsamiq+Sans&family=Wellfleet&display=swap" />
+    <script src="https://kit.fontawesome.com/331def02d9.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap icon fonts stylesheet for the moment, until FontAwesome problem is resolved? -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <title>jcomp-03's webpage</title>
+</head>
+
+<!-- CDN for WebRTC JavaScript Library -->
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+<body>
+    <header class="asr-header">
+        <ul class="nav">
+            <li class="nav-item list-item">
+                <div class="list-item-div">
+                    <a class="nav-link navbar-anchor" href="index.html">Home</a>
+                    <i class="bi bi-house navbar-icon"></i>
+                </div>
+            </li>
+            <li class="nav-item list-item">
+                <div class="list-item-div">
+                    <a class="nav-link navbar-anchor" href="about.html">About</a>
+                    <i class="bi bi-fingerprint navbar-icon fingerprint"></i>
+                </div>
+            </li>
+            <li class="nav-item list-item">
+                <div class="list-item-div">
+                    <a class="nav-link navbar-anchor" href="index.html#title-my-work">Work</a>
+                    <i class="bi bi-hammer navbar-icon hammer"></i>
+                </div>
+            </li>
+            <li class="nav-item list-item">
+                <div class="list-item-div">
+                    <a class="nav-link navbar-anchor" href="index.html#title-contact-me">Contact</a>
+                    <i class="bi bi-envelope navbar-icon envelope"></i>
+                </div>
+            </li>
+            <li class="nav-item list-item">
+                <div class="list-item-div">
+                    <a class="nav-link navbar-anchor" href="index.html#title-my-resume">Resume</a>
+                    <i class="bi bi-file-earmark-person navbar-icon resume"></i>
+                </div>
+            </li>
+            <li class="nav-item list-item">
+                <div class="list-item-div">
+                    <a class="nav-link navbar-anchor" href="index.html#title-miscellaneous">Miscellaneous</a>
+                    <i class="bi bi-patch-question navbar-icon miscellaneous"></i>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div id="title-message" class="row justify-content-center mx-auto class-section-title mt-5">
+            Leave Me a Message!
+        </div>
+        <p class="row class-website-text">
+            Here you can try out AssemblyAI's really neat real-time speech-to-text transcription technology, which I
+            have integrated conveniently into the button located below. Go ahead
+        </p>
+        <br />
+        <div class="asr-container">
+            <div class="asr-text" id="asr-text">
+
+            </div>
+            <div class="asr-button-group">
+                <button type="button" class="btn btn-success" id="startBtn">Start Recording</button>
+                <button type="button" class="btn btn-danger" id="stopBtn">Stop Recording</button>
+                <button type="button" class="btn btn-info" id="saveBtn">Save to Board</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- message board -->
+    <div id="title-message-board" class="row justify-content-center mx-auto class-section-title mt-5">
+        The Message Board
+    </div>
+
+    <!-- <script src="bower_components/jquery/jquery.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <!-- Run server.js file to start web server -->
+    <!-- <script src="server.js"></script> -->
+    <!-- Run js/asr.js for websocket connection -->
+    <script src="js/asr.js"></script>
+</body>
+
+</html>
