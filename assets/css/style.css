@@ -50,6 +50,7 @@ header {
     background-color: var(--textColor1);
     border-bottom: solid 0.2em white;
 }
+<<<<<<< HEAD
 .animation-container-greeting span {
     font-family: 'Wellfleet', cursive;
     color: var(--textColor2);
@@ -62,10 +63,26 @@ header {
 }
 .list-item {
     font-size: 1.5em;
+=======
+.animation-container-greeting {
+    margin-left: 1em;
+}
+.animation-container-greeting span {
+    font-family: 'Wellfleet', cursive;
+    color: var(--textColor2);
+    font-size: 1.6em;
+    white-space: pre;
+    opacity: 0;
+}
+.list-item {
+    font-size: 1em;
+    width: 100%;
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
     margin: 0 0.5em;
 }
 .list-item-div {
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
     align-items: center;
 }
@@ -77,6 +94,21 @@ header {
 .nav-icon {
     padding-left: 0.3em;
     padding-top: 0.2em;
+=======
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar-anchor {
+    padding: 0;
+    font-family: 'Noto Sans Mono', monospace;
+    color: var(--colorMain5);
+    font-size: 1.0em;
+}
+.navbar-icon {
+    padding-left: 0.3em;
+    padding-top: 0.2em;
+    font-size: 1.6em;
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
     color: black;
 }
 i.fingerprint {
@@ -102,6 +134,12 @@ i.miscellaneous {
 .about-me {
     margin: 5em 0 10em;
 }
+<<<<<<< HEAD
+=======
+.about-me div:nth-child(2) {
+    /* margin: 0 2em; */
+}
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
 .about-me div:nth-child(2) a {
     text-decoration: none;
     color: black;
@@ -142,7 +180,13 @@ i.miscellaneous {
         stroke-dashoffset: 0;
     }
 }
+<<<<<<< HEAD
 /* JUMBOTRON STYLING ENDS */
+=======
+/* JUMBOTRON STYLING ENDS*/
+
+
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
 
 /* WORK PORTFOLIO STYLING */
 .card-content {
@@ -187,6 +231,11 @@ i.miscellaneous {
 }
 /* WORK PORTFOLIO STYLING ENDS */
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
 /* CONTACT ME STYLING */
 .class-contact-me-logos a {
     font-size: 12em;
@@ -202,6 +251,7 @@ i.miscellaneous {
 .class-contact-me-logos > .class-mailto {
     color: var(--colorMain2);    
 }
+<<<<<<< HEAD
 /* CONTACT ME STYLING ENDS */
 
 /* FOOTER STYLING BEGINS */
@@ -326,14 +376,26 @@ footer {
     font-size: 1.5em;
 }
 /* asr.html ENDS */
+=======
+
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
 
 /***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
 .list-item-div:hover {
     transform: scale(1.1, 1.1);
 }
+<<<<<<< HEAD
 .nav-anchor:hover {
     color: var(--textColor2);
 }
+=======
+.navbar-anchor:hover {
+    color: var(--textColor2);
+}
+.class-rome:hover {
+    opacity: 1;
+}
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
 
 /***** UTILITIES *****/
 .class-section-title {
@@ -365,17 +427,32 @@ footer {
     font-style: italic;
     font-weight: bold;
 }
+<<<<<<< HEAD
 .margin-upper {
     margin-top: 2.5em;
 }
+=======
+
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
 
 /***** MEDIA QUERIES *****/
 @media screen and (min-width: 575px) {
     .animation-container-greeting span {
         font-size: 1.8em;
     }
+<<<<<<< HEAD
     .nav-icon {
         /* font-size: 1.6em; */
+=======
+    .nav {
+        flex-wrap: nowrap;
+    }
+    .list-item-div {
+        justify-content: center;
+    }
+    .navbar-icon {
+        font-size: 1.6em;
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
     }
     .card-text-container a {
         display: inline;
@@ -389,12 +466,21 @@ footer {
     .animation-container-greeting span {
         font-size: 3em;
     }
+<<<<<<< HEAD
     .list-item {
         font-size: 1.8em;
     }
     .list-item-div:hover {
         transform: scale(1.2, 1.2);
     }
+=======
+    .list-item-div:hover {
+        transform: scale(1.2, 1.2);
+    }
+    .navbar-anchor {
+        font-size: 1.5em;
+    }
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
     .class-section-title {
         margin-bottom: 1em;
     }
@@ -424,10 +510,14 @@ footer {
         flex-wrap: wrap;
     }
     .list-item {
+<<<<<<< HEAD
         margin: 0 1.1em;
     }
     .list-item-div {
         padding: 0.4em;
+=======
+        margin: 0 1.5em;
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
     }
     .jumbotron-container {
         margin: 12em 0 5em;
@@ -469,7 +559,10 @@ footer {
     .switch-order {
         order: -1;
     }
+<<<<<<< HEAD
     .
+=======
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
 }
 
 @media screen and (min-width: 1200px) {
@@ -482,6 +575,7 @@ footer {
     .card-content {
         align-items: stretch;
     }
+<<<<<<< HEAD
     .asr-container {
         flex-direction: row;
     }
@@ -501,6 +595,9 @@ footer {
         margin-left: 0em;
         margin-top: 1em;
     }
+=======
+
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
 }
 
 @media screen and (min-width: 1400px) {
@@ -510,7 +607,13 @@ footer {
     .about-me .class-website-text {
         margin-left: 2.5em;
     }
+<<<<<<< HEAD
 
+=======
+    header {
+        justify-content: space-between;
+    }
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
     .card.card-style {
         height: 29em;
     }
@@ -525,12 +628,15 @@ footer {
     }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1660px) {
     header {
         justify-content: space-between;
     }
 }
 
+=======
+>>>>>>> 5588d8268e5b5c0062125e27c33d3c20a5441b59
 @keyframes changeOpacity {
     0% {opacity: 0;}
     100% {opacity: 1;}
