@@ -8,6 +8,9 @@ const modalInputEl = document.getElementById("name-input");
 const modalSaveBtnEl = document.getElementById("modal-save-button");
 const modalCloseBtnEl = document.getElementById("modal-close-button");
 const modalXOutBtnEl = document.getElementById('xOut-button');
+const copyrightEl = document.getElementById('copyright');
+
+copyrightEl.textContent = `Copyright ${new Date().getFullYear()} James Compagnoni`
 
 // set initial state of application variables
 let isRecording = false;

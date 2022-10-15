@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Noto+Sans+Mono:wght@600&family=Patua+One&family=Source+Code+Pro:wght@600&family=Balsamiq+Sans&family=Wellfleet&display=swap" />
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Noto+Sans+Mono:wght@600&family=Patua+One&family=Source+Code+Pro:wght@600&family=Balsamiq+Sans&family=Wellfleet&display=swap&family=Anton&display=swap" />
     <script src="https://kit.fontawesome.com/331def02d9.js" crossorigin="anonymous"></script>
     <!-- Bootstrap icon fonts stylesheet for the moment, until FontAwesome problem is resolved? -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
@@ -23,43 +23,42 @@
 <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 
 <body>
-
     <header class="asr-header">
         <ul class="nav">
             <li class="nav-item list-item">
                 <div class="list-item-div">
-                    <a class="nav-link navbar-anchor" href="index.html">Home</a>
-                    <i class="bi bi-house navbar-icon"></i>
+                    <a class="nav-link nav-anchor" href="index.html">Home</a>
+                    <i class="bi bi-house nav-icon"></i>
                 </div>
             </li>
             <li class="nav-item list-item">
                 <div class="list-item-div">
-                    <a class="nav-link navbar-anchor" href="about.html">About</a>
-                    <i class="bi bi-fingerprint navbar-icon fingerprint"></i>
+                    <a class="nav-link nav-anchor" href="about.html">About</a>
+                    <i class="bi bi-fingerprint nav-icon fingerprint"></i>
                 </div>
             </li>
             <li class="nav-item list-item">
                 <div class="list-item-div">
-                    <a class="nav-link navbar-anchor" href="index.html#title-my-work">Work</a>
-                    <i class="bi bi-hammer navbar-icon hammer"></i>
+                    <a class="nav-link nav-anchor" href="#title-my-work">Work</a>
+                    <i class="bi bi-hammer nav-icon hammer"></i>
                 </div>
             </li>
             <li class="nav-item list-item">
                 <div class="list-item-div">
-                    <a class="nav-link navbar-anchor" href="index.html#title-contact-me">Contact</a>
-                    <i class="bi bi-envelope navbar-icon envelope"></i>
+                    <a class="nav-link nav-anchor" href="#title-contact-me">Contact</a>
+                    <i class="bi bi-envelope nav-icon envelope"></i>
                 </div>
             </li>
             <li class="nav-item list-item">
                 <div class="list-item-div">
-                    <a class="nav-link navbar-anchor" href="index.html#title-my-resume">Resume</a>
-                    <i class="bi bi-file-earmark-person navbar-icon resume"></i>
+                    <a class="nav-link nav-anchor" href="#title-my-resume">Resume</a>
+                    <i class="bi bi-file-earmark-person nav-icon resume"></i>
                 </div>
             </li>
             <li class="nav-item list-item">
                 <div class="list-item-div">
-                    <a class="nav-link navbar-anchor" href="index.html#title-miscellaneous">Miscellaneous</a>
-                    <i class="bi bi-patch-question navbar-icon miscellaneous"></i>
+                    <a class="nav-link nav-anchor" href="#title-miscellaneous">Miscellaneous</a>
+                    <i class="bi bi-patch-question nav-icon miscellaneous"></i>
                 </div>
             </li>
         </ul>
@@ -91,7 +90,15 @@
             Leave Me a Message!
         </div>
         <p class="row class-website-text">
-            Here you can try out AssemblyAI's really neat real-time speech-to-text transcription technology.
+            In the textbox below I make a connection to AssemblyAI's WebSocket API
+            for real-time streaming transcription. A websocket is a two-way communication a channel
+            that allows for the continuous exchange in information between the client and server;
+            so in practice, as you click the record button and begin speaking, your speech will be
+            transcribed in real-time (allowing a small delay for transit time, of course!) and shown back
+            to you in the white space. Optionally, you can save it to the message board by clicking on
+            the blue button. Try it out and leave me a message! As a quick suggestion, give it a second
+            before speaking as well as when you're finished speaking--you'll see it perform some automatic punctuation
+            and casing. Enjoy!
         </p>
         <br />
         <div class="asr-container mb-5">
@@ -115,6 +122,26 @@
         <ul id="message-board" class="message-board">
         </ul>
     </div>
+
+    <footer>
+        <span class="footer-emoji">Made with 🧰 and 🔥</span>
+        <span class="footer-copyright" id="copyright"></span>
+        <div class="span-group">
+            <span class="footer-contact">GET IN TOUCH <i class="fa-solid fa-circle-arrow-right footer-arrow"></i></span>
+            <span>
+                <a href="mailto:jcomp_03@yahoo.com">
+                    <i class="fa-solid fa-envelope footer-icon footer-icon-mail"></i></a>
+            </span>
+            <span>
+                <a href="https://www.linkedin.com/in/james-compagnoni-27393030/" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-linkedin footer-icon footer-icon-linkedin"></i></a>
+            </span>
+            <span>
+                <a href="https://github.com/jcomp-03" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-square-github footer-icon footer-icon-github"></i></a>
+            </span>
+        </div>
+    </footer>
 
     <!-- <script src="bower_components/jquery/jquery.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
