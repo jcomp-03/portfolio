@@ -253,6 +253,9 @@ i.miscellaneous {
     font-style: italic;
     font-weight: bold;
 }
+.margin-upper {
+    margin-top: 2.5em;
+}
 
 /***** asr.html *****/
 .asr-header {
@@ -269,21 +272,64 @@ i.miscellaneous {
 .asr-text {
     background-color: white;
     font-size: 2em;
+    color: black;
     min-height: 100%;
     width: 100%;
-    box-shadow: -0.5em -0.75em var(--textColor1), 0.5em 0.75em var(--textColor2);
-
+    box-shadow: -0.5em -1em var(--textColor1), 0.5em 1em var(--textColor2);
 }
 .asr-button-group {
     width: auto;
-    margin-top: 2em;
+    margin-top: 3em;
     display: flex;
-    /* border: solid 2px red; */
 }
-
 .asr-button-group button:not(:nth-child(1)) {
     margin-left: 1em;
 }
+.message-board {
+    padding: 0;
+    background-color:rgba(237, 226, 110, 0.75);
+    min-height: 20vh;
+    list-style-type: none;
+    /* border: solid 2px black; */
+}
+.message-board li {
+    display: flex;
+    border-bottom: solid 2px red;
+}
+.message-board li:last-child {
+    border-bottom: none;
+}
+.message-icon::before {
+    content: '\f075';
+    color: rgba(255, 255, 255, 1);
+    font-family: 'FontAwesome';
+    font-size: 2.5em;
+    margin: 0 1em;
+}
+.message-icon {
+    margin-top: 1em;
+}
+.message-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 1em; */
+    padding: 1em
+}
+.message-box .message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--colorMain5)
+}
+.message-box .message-meta {
+    text-align: right;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+
+
 
 /***** MEDIA QUERIES *****/
 @media screen and (min-width: 575px) {

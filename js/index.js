@@ -3,8 +3,11 @@ const dashNodeList = document.querySelectorAll(".dash");
 const pathNodeList = document.querySelectorAll(".path");
 const duration = [3, 3, 6, 6, 3, 8, 3, 3, 2, 6];
 const dashLengths = [.05, .05, .02, .02, .04, .02, .06, .04, .15, .03];
+const copyrightEl = document.getElementById('copyright');
 
 let animationCount = 0;
+
+copyrightEl.textContent = `Copyright ${new Date().getFullYear()}`
 
 function beginJourney(e) {
     if(!animationCount) {
@@ -25,4 +28,6 @@ function beginJourney(e) {
     animationCount++;
 }
 
+// event listeners
 jumbotron.addEventListener('mouseenter', beginJourney);
+

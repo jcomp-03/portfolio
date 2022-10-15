@@ -16,13 +16,14 @@
     <script src="https://kit.fontawesome.com/331def02d9.js" crossorigin="anonymous"></script>
     <!-- Bootstrap icon fonts stylesheet for the moment, until FontAwesome problem is resolved? -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
-    <title>jcomp-03's webpage</title>
+    <title>James Compagnoni</title>
 </head>
 
 <!-- CDN for WebRTC JavaScript Library -->
 <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 
 <body>
+
     <header class="asr-header">
         <ul class="nav">
             <li class="nav-item list-item">
@@ -64,30 +65,86 @@
         </ul>
     </header>
 
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" id="my-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Include your name?</h5>
+                    <button id="xOut-button" type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="name-input" placeholder="Enter it here" />
+                </div>
+                <div class="modal-footer">
+                    <button id="modal-close-button" type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button>
+                    <button id="modal-save-button" type="button" class="btn btn-primary" disabled>Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <div id="title-message" class="row justify-content-center mx-auto class-section-title mt-5">
+        <div id="title-message" class="row justify-content-center mx-auto class-section-title">
             Leave Me a Message!
         </div>
         <p class="row class-website-text">
-            Here you can try out AssemblyAI's really neat real-time speech-to-text transcription technology, which I
-            have integrated conveniently into the button located below. Go ahead
+            Here you can try out AssemblyAI's really neat real-time speech-to-text transcription technology.
         </p>
         <br />
-        <div class="asr-container">
-            <div class="asr-text" id="asr-text">
-
-            </div>
+        <div class="asr-container mb-5">
+            <div class="asr-text" id="message-div"></div>
             <div class="asr-button-group">
-                <button type="button" class="btn btn-success" id="startBtn">Start Recording</button>
-                <button type="button" class="btn btn-danger" id="stopBtn">Stop Recording</button>
-                <button type="button" class="btn btn-info" id="saveBtn">Save to Board</button>
+                <button type="button" class="btn btn-success" id="record-button">
+                    Start Recording
+                </button>
+                <!-- <button type="button" class="btn btn-info" id="saveBtn" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Save to Board
+                </button> -->
+                <button type="button" class="btn btn-info" id="save-button">
+                    Save to Board
+                </button>
             </div>
         </div>
+        <!-- message board -->
+        <div id="title-message-board" class="row justify-content-center mx-auto class-section-title margin-upper">
+            The Message Board
+        </div>
+        <ul id="message-board" class="message-board">
+            <li>
+                <span class="message-icon"></span>
+                <div class="message-box">
+                    <span class="message">
+                        Here is your first message James! Now go and style it! Here is your first message James! Now go
+                        and
+                        style it! Here is your first message James! Now go and style it! Here is your first message
+                        James!
+                        Now go and style it!
+                    </span>
+                    <span class="message-meta">
+                        fadfadfadfad
+                    </span>
+                </div>
+            </li>
+            <li>
+                <span class="message-icon"></span>
+                <div class="message-box">
+                    <span class="message">
+                        Here is your first message James! Now go and style it! Here is your first message James! Now go
+                        and
+                        style it! Here is your first message James! Now go and style it! Here is your first message
+                        James!
+                        Now go and style it!
+                    </span>
+                    <span class="message-meta">
+                        fadfadfadfad
+                    </span>
+                </div>
 
-    </div>
-    <!-- message board -->
-    <div id="title-message-board" class="row justify-content-center mx-auto class-section-title mt-5">
-        The Message Board
+            </li>
+        </ul>
     </div>
 
     <!-- <script src="bower_components/jquery/jquery.js"></script> -->
@@ -95,10 +152,9 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
 
-    <!-- Run server.js file to start web server -->
-    <!-- <script src="server.js"></script> -->
     <!-- Run js/asr.js for websocket connection -->
     <script src="js/asr.js"></script>
+
 </body>
 
 </html>

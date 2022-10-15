@@ -1,12 +1,19 @@
 // JavaScript references to DOM elements
-const buttonEl = document.getElementById("startBtn");
-const messageEl = document.getElementById("asr-text");
-// const titleEl = document.getElementById("real-time-title");
+const recordBtnEl = document.getElementById("record-button");
+const saveBtnEl = document.getElementById("save-button");
+const messageEl = document.getElementById("message-div");
+const messageBoardEl = document.getElementById("message-board");
+const modal = new bootstrap.Modal(document.getElementById("my-modal"), {backdrop: 'static'});
+const modalInputEl = document.getElementById("name-input");
+const modalSaveBtnEl = document.getElementById("modal-save-button");
+const modalCloseBtnEl = document.getElementById("modal-close-button");
+const modalXOutBtnEl = document.getElementById('xOut-button');
 
 // set initial state of application variables
 let isRecording = false;
 let socket;
 let recorder;
+let messageText;
 
 // runs real-time transcription and handles global variables
 const run = async () => {
@@ -72,7 +79,7 @@ const run = async () => {
     // onopen event listener
     socket.onopen = () => {
       // once socket is open, begin recording
-    //   messageEl.style.display = "";
+      //   messageEl.style.display = "";
       navigator.mediaDevices
         .getUserMedia({ audio: true })
         .then((stream) => {
@@ -110,10 +117,62 @@ const run = async () => {
   }
 
   isRecording = !isRecording;
-  buttonEl.innerText = isRecording ? "Stop Recording" : "Start Recording";
-//   titleEl.innerText = isRecording
-//     ? "Click stop to end recording!"
-//     : "Click start to begin recording!";
+  recordBtnEl.classList = isRecording ? "btn btn-danger" : "btn btn-success";
+  recordBtnEl.innerText = isRecording ? "Stop Recording" : "Start Recording";
 };
 
-buttonEl.addEventListener("click", () => run());
+const showModal = () => {
+  // save message in global variable
+  messageText = messageEl.textContent;
+  // if no text, run alert and exit function
+  if (!messageText) {
+    alert(
+      "Press the record button first to transcribe your speech to text, then stop recording and hit save."
+    );
+    return null;
+  }
+  // otherwise show the modal
+  modal.show();
+};
+
+const messageTemplate = (message, author) => {
+  const now = new Date().toDateString();
+
+  return `
+    <li>
+      <span class="message-icon"></span>
+      <div class="message-box">
+          <span class="message">
+            ${message}
+          </span>
+          <span class="message-meta">
+              ${author} on ${now} 
+          </span>
+      </div>
+    </li>`;
+};
+
+const saveToMessageBoard = () => {
+  let name = modalInputEl.value;
+  if (!name) name = "Anonymous";
+  // pass in message text and name to template literal
+  const newMsg = messageTemplate(messageText, name);
+  // insert into DOM
+  messageBoardEl.insertAdjacentHTML("afterbegin", newMsg);
+  modal.hide();
+  messageEl.textContent = "";
+};
+
+const changeButtonState = () => {
+  modalInputEl.value === ""
+    ? (modalSaveBtnEl.disabled = true)
+    : (modalSaveBtnEl.disabled = false);
+};
+
+// event listeners
+recordBtnEl.addEventListener("click", () => run());
+saveBtnEl.addEventListener("click", () => showModal());
+modalInputEl.addEventListener("keyup", () => changeButtonState());
+modalSaveBtnEl.addEventListener("click", () => saveToMessageBoard());
+modalCloseBtnEl.addEventListener("click", () => saveToMessageBoard());
+modalXOutBtnEl.addEventListener("click", () => saveToMessageBoard());
