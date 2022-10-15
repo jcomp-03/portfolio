@@ -34,6 +34,17 @@ app.get("/", async (req, res) => {
   }
 });
 
+app.get("/healthcheck", async (req, res) => {
+  try {
+    console.log(`${process.env.TEST_VARIABLE}`)
+    console.log('Successfully hitting endpoint /healthcheck');
+    res.status(200).json('Successfully hitting endpoint /healthcheck');
+  } catch (error) {
+    console.log("***** Error! Something undesired happened: *****\n", error);
+    res.status(400).json(error);
+  }
+});
+
 
 // start the web server, listening for connections on the port assigned above
 const server = app.listen(PORT, () => {
