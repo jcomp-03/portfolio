@@ -2,6 +2,7 @@
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
+const PORT = process.env.PORT || 8000;
 require('dotenv').config();
 
 const app = express();
@@ -18,7 +19,6 @@ app.get("/", async (req, res) => {
       // AssemblyAI API Key goes here; saved as environment variable for privacy/security
       { headers: { authorization: process.env.ASSEMBLYAI_API_KEY } }
     );
-    // console.log('Response data is', response);
     // destructure data property from response
     const { data } = response;
     // create new environment variable to store temporary authentication token
@@ -34,10 +34,8 @@ app.get("/", async (req, res) => {
   }
 });
 
-// set port number
-app.set("port", 8000);
 
 // start the web server, listening for connections on the port assigned above
-const server = app.listen(app.get("port"), () => {
-  console.log(`***** Server is running on port ${server.address().port} *****`);
+const server = app.listen(PORT, () => {
+  console.log(`***** Server is running on port ${PORT} *****`);
 });
