@@ -7,7 +7,7 @@ const copyrightEl = document.getElementById('copyright');
 
 let animationCount = 0;
 
-copyrightEl.textContent = `Copyright ${new Date().getFullYear()}`
+copyrightEl.textContent = `Copyright ${new Date().getFullYear()} James Compagnoni`
 
 function beginJourney(e) {
     if(!animationCount) {

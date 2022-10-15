@@ -50,36 +50,33 @@ header {
     background-color: var(--textColor1);
     border-bottom: solid 0.2em white;
 }
-.animation-container-greeting {
-    margin-left: 1em;
-}
 .animation-container-greeting span {
     font-family: 'Wellfleet', cursive;
     color: var(--textColor2);
-    font-size: 1.6em;
+    font-size: 1.5em;
     white-space: pre;
     opacity: 0;
 }
+.nav {
+    justify-content: center;
+}
 .list-item {
-    font-size: 1em;
-    width: 100%;
+    font-size: 1.5em;
     margin: 0 0.5em;
 }
 .list-item-div {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
-.navbar-anchor {
+.nav-anchor {
     padding: 0;
     font-family: 'Noto Sans Mono', monospace;
     color: var(--colorMain5);
-    font-size: 1.0em;
 }
-.navbar-icon {
+.nav-icon {
     padding-left: 0.3em;
     padding-top: 0.2em;
-    font-size: 1.6em;
     color: black;
 }
 i.fingerprint {
@@ -104,9 +101,6 @@ i.miscellaneous {
 /* ABOUT ME STYLING */
 .about-me {
     margin: 5em 0 10em;
-}
-.about-me div:nth-child(2) {
-    /* margin: 0 2em; */
 }
 .about-me div:nth-child(2) a {
     text-decoration: none;
@@ -148,7 +142,7 @@ i.miscellaneous {
         stroke-dashoffset: 0;
     }
 }
-/* JUMBOTRON STYLING ENDS*/
+/* JUMBOTRON STYLING ENDS */
 
 /* WORK PORTFOLIO STYLING */
 .card-content {
@@ -193,8 +187,6 @@ i.miscellaneous {
 }
 /* WORK PORTFOLIO STYLING ENDS */
 
-
-
 /* CONTACT ME STYLING */
 .class-contact-me-logos a {
     font-size: 12em;
@@ -210,17 +202,136 @@ i.miscellaneous {
 .class-contact-me-logos > .class-mailto {
     color: var(--colorMain2);    
 }
+/* CONTACT ME STYLING ENDS */
 
+/* FOOTER STYLING BEGINS */
+footer {
+    background-color: var(--textColor1);
+    border-top: solid 0.2em white;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+.footer-emoji {
+    color: black;
+    font-size: 6em;
+    font-family: 'Patua One', cursive;
+    align-self: center;
+    text-align: center;
+}
+.footer-copyright {
+    margin: 0.2em 0 1em;
+    color: black;
+    font-size: 6em;
+    font-family: 'Patua One', cursive;
+    align-self: center;
+    text-align: center;
+}
+.span-group {
+
+    text-align: center;
+}
+.span-group span:not(:nth-child(1)) {
+    margin: 0 2em;
+}
+.footer-contact {
+    color: rgb(249, 231, 37);
+    font-size: 8em;
+    font-family: 'Anton', sans-serif;
+}
+.footer-arrow {
+    color: white;
+}
+.footer-icon {
+    font-size: 8em;
+}
+.footer-icon-mail {
+    color: var(--colorMain2);
+}
+.footer-icon-linkedin {
+    color: #0072b1;
+}
+.footer-icon-github {
+    color: var(--colorMain5);
+}
+
+/* FOOTER STYLING ENDS */
+
+/* asr.html BEGINS */
+.asr-header {
+    display: flex;
+    justify-content: end;
+}
+.asr-container {
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.asr-text {
+    background-color: white;
+    font-size: 2em;
+    color: black;
+    min-height: 100%;
+    width: 100%;
+    box-shadow: -0.5em -1em var(--textColor1), 0.5em 1em var(--textColor2);
+}
+.asr-button-group {
+    width: auto;
+    margin-top: 3em;
+    display: flex;
+}
+.asr-button-group button:not(:nth-child(1)) {
+    margin-left: 1em;
+}
+.message-board {
+    padding: 0;
+    background-color:rgba(237, 226, 110, 0.75);
+    min-height: 20vh;
+    list-style-type: none;
+}
+.message-board li {
+    display: flex;
+    border-bottom: solid 2px red;
+}
+.message-board li:last-child {
+    border-bottom: none;
+}
+.message-icon::before {
+    content: '\f075';
+    color: rgba(255, 255, 255, 1);
+    font-family: 'FontAwesome';
+    font-size: 2.5em;
+    margin: 0 1em;
+}
+.message-icon {
+    margin-top: 1em;
+}
+.message-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em
+}
+.message-box .message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--colorMain5)
+}
+.message-box .message-meta {
+    text-align: right;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+/* asr.html ENDS */
 
 /***** PSEUD0-CLASSES & PSEUDO-ELEMENTS *****/
 .list-item-div:hover {
     transform: scale(1.1, 1.1);
 }
-.navbar-anchor:hover {
+.nav-anchor:hover {
     color: var(--textColor2);
-}
-.class-rome:hover {
-    opacity: 1;
 }
 
 /***** UTILITIES *****/
@@ -257,93 +368,13 @@ i.miscellaneous {
     margin-top: 2.5em;
 }
 
-/***** asr.html *****/
-.asr-header {
-    display: flex;
-    justify-content: end;
-}
-.asr-container {
-    /* border: solid 2px black; */
-    height: 20em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.asr-text {
-    background-color: white;
-    font-size: 2em;
-    color: black;
-    min-height: 100%;
-    width: 100%;
-    box-shadow: -0.5em -1em var(--textColor1), 0.5em 1em var(--textColor2);
-}
-.asr-button-group {
-    width: auto;
-    margin-top: 3em;
-    display: flex;
-}
-.asr-button-group button:not(:nth-child(1)) {
-    margin-left: 1em;
-}
-.message-board {
-    padding: 0;
-    background-color:rgba(237, 226, 110, 0.75);
-    min-height: 20vh;
-    list-style-type: none;
-    /* border: solid 2px black; */
-}
-.message-board li {
-    display: flex;
-    border-bottom: solid 2px red;
-}
-.message-board li:last-child {
-    border-bottom: none;
-}
-.message-icon::before {
-    content: '\f075';
-    color: rgba(255, 255, 255, 1);
-    font-family: 'FontAwesome';
-    font-size: 2.5em;
-    margin: 0 1em;
-}
-.message-icon {
-    margin-top: 1em;
-}
-.message-box {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* margin-bottom: 1em; */
-    padding: 1em
-}
-.message-box .message {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: var(--colorMain5)
-}
-.message-box .message-meta {
-    text-align: right;
-    margin-top: 1em;
-    font-size: 1.5em;
-}
-
-
-
-
 /***** MEDIA QUERIES *****/
 @media screen and (min-width: 575px) {
     .animation-container-greeting span {
         font-size: 1.8em;
     }
-    .nav {
-        flex-wrap: nowrap;
-    }
-    .list-item-div {
-        justify-content: center;
-    }
-    .navbar-icon {
-        font-size: 1.6em;
+    .nav-icon {
+        /* font-size: 1.6em; */
     }
     .card-text-container a {
         display: inline;
@@ -357,11 +388,11 @@ i.miscellaneous {
     .animation-container-greeting span {
         font-size: 3em;
     }
+    .list-item {
+        font-size: 1.8em;
+    }
     .list-item-div:hover {
         transform: scale(1.2, 1.2);
-    }
-    .navbar-anchor {
-        font-size: 1.5em;
     }
     .class-section-title {
         margin-bottom: 1em;
@@ -392,7 +423,10 @@ i.miscellaneous {
         flex-wrap: wrap;
     }
     .list-item {
-        margin: 0 1.5em;
+        margin: 0 1.1em;
+    }
+    .list-item-div {
+        padding: 0.4em;
     }
     .jumbotron-container {
         margin: 12em 0 5em;
@@ -434,6 +468,7 @@ i.miscellaneous {
     .switch-order {
         order: -1;
     }
+    .
 }
 
 @media screen and (min-width: 1200px) {
@@ -474,9 +509,7 @@ i.miscellaneous {
     .about-me .class-website-text {
         margin-left: 2.5em;
     }
-    header {
-        justify-content: space-between;
-    }
+
     .card.card-style {
         height: 29em;
     }
@@ -488,6 +521,12 @@ i.miscellaneous {
     }
     .card-text {
         font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1660px) {
+    header {
+        justify-content: space-between;
     }
 }
 
