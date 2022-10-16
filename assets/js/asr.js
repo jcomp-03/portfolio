@@ -32,7 +32,7 @@ const run = async () => {
       recorder = null;
     }
   } else {
-    const response = await fetch("http://localhost:8000"); // get temp session token from server.js (backend)
+    const response = await fetch("http://localhost:8000/transcription"); // get temp session token from server.js (backend)
     const data = await response.json();
 
     if (data.error) {
