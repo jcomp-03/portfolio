@@ -8,12 +8,15 @@ require("dotenv").config();
 
 const app = express();
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'assets')));
 app.use(cors());
 
 app.get("/", async (req, res) => {
   try {
+    // get absolute path of index.html
     const root = path.join(__dirname, 'index.html');
     console.log(root);
+    // serve index.html file
     res.status(200).sendFile(root);
   } catch (error) {
     console.log("***** Error! Something undesired happened: *****\n", error);
