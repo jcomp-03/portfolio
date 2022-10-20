@@ -14,7 +14,7 @@ const copyrightEl = document.getElementById("copyright");
 
 copyrightEl.textContent = `Copyright ${new Date().getFullYear()} James Compagnoni`;
 
-const PORT = process.env.PORT || 8000;
+// const PORT = process.env.PORT || 8000;
 
 // set initial state of application variables
 let isRecording = false;
@@ -37,7 +37,8 @@ const run = async () => {
       recorder = null;
     }
   } else {
-    const response = await fetch(`http://localhost:${PORT}/transcription`); // get temp session token from server.js (backend)
+    const response = await fetch('/transcription'); // get temp session token from server.js (backend)
+    // const response = await fetch(`http://localhost:8000/transcription`); // get temp session token from server.js (backend)
     const data = await response.json();
 
     if (data.error) {
