@@ -14,7 +14,8 @@ const copyrightEl = document.getElementById("copyright");
 
 copyrightEl.textContent = `Copyright ${new Date().getFullYear()} James Compagnoni`;
 
-const PORT = process.env.PORT || 8000;
+// commented out since Node process will not run on GitHub Pages
+// const PORT = process.env.PORT || 8000;
 
 // set initial state of application variables
 let isRecording = false;
